@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adaptive connected header panel for AI Clipboard.
+  - Left/Right button columns are always visible (no negative margins)
+  - Group row + Search row are rectangular and connected to side buttons
+  - Border/dividers are thicker blue (colorPrimary)
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_clipboard_header_panel"
+    android:padding="0dp">
+
+    <!-- LEFT COLUMN: Select / Sort -->
+    <LinearLayout
+        android:id="@+id/ll_left_actions"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_select_mode"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:contentDescription="@string/ui_select_items"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_text_selection_filled"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="?attr/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider_clipboard_header_h" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sort_time"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="?attr/colorPrimary"
+            android:contentDescription="@string/ui_sort_time"
+            android:text="@string/ui_sort_desc"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <!-- VERTICAL DIVIDER -->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/divider_clipboard_header_v" />
+
+    <!-- CENTER COLUMN: Group + Search (rectangular, connected) -->
+    <LinearLayout
+        android:id="@+id/ll_center_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Row 1: Group selector + stats -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_group_select"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="?attr/colorPrimary"
+                android:contentDescription="@string/ui_clipboard_groups"
+                app:cornerRadius="0dp"
+                app:strokeWidth="0dp"
+                app:icon="@drawable/ic_expand_more"
+                app:iconGravity="textEnd"
+                app:iconTint="?attr/colorPrimary"
+                app:iconPadding="6dp" />
+
+            <TextView
+                android:id="@+id/tv_group_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="28dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:includeFontPadding="false"
+                android:textSize="12sp"
+                android:textColor="?attr/colorPrimary"
+                android:clickable="false"
+                android:focusable="false" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider_clipboard_header_h" />
+
+        <!-- Row 2: Search -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_clipboard_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="0dp"
+            app:boxBackgroundMode="none"
+            app:hintEnabled="false"
+            app:endIconMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_clipboard_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:gravity="center_vertical"
+                android:hint="@string/ui_clipboard_search_hint"
+                android:singleLine="true"
+                android:imeOptions="actionSearch" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- VERTICAL DIVIDER -->
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/divider_clipboard_header_v" />
+
+    <!-- RIGHT COLUMN: Add / Favorites -->
+    <LinearLayout
+        android:id="@+id/ll_right_actions"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_group_add"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:contentDescription="@string/ui_add_group"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="?attr/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider_clipboard_header_h" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_fav_toggle"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:contentDescription="@string/ui_favorites"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_star"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="?attr/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>
