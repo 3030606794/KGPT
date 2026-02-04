@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KGPT</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_models">النماذج</string>
+    <string name="nav_api_keys">مفاتيح API</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Home Screen -->
+    <string name="module_active">الوحدة نشطة</string>
+    <string name="module_inactive">الوحدة غير نشطة</string>
+    <string name="module_active_desc">KGPT يعمل</string>
+    <string name="module_inactive_desc">يرجى التفعيل من مدير LSPosed</string>
+    <string name="module_restart_required_desc">أعد تشغيل الجهاز لتفعيل الوحدة</string>
+    <string name="quick_actions">إجراءات سريعة</string>
+    <string name="current_model">النموذج الحالي</string>
+    <string name="ai_invocation">طرق الاستدعاء</string>
+    <string name="ai_invocation_desc">إعداد أوامر وأنماط التفعيل</string>
+    <string name="how_to_use">دليل الاستخدام</string>
+    <string name="how_to_use_desc">تعلم كيف تستخدم KGPT</string>
+
+    <!-- Models Screen -->
+    <string name="ai_models">نماذج الذكاء الاصطناعي</string>
+    <string name="select_model">اختر النموذج المفضل</string>
+    <string name="model_config">إعدادات النموذج</string>
+    <string name="sub_model">النموذج الفرعي</string>
+    <string name="base_url">رابط القاعدة (Base URL)</string>
+    <string name="advanced_settings">إعدادات متقدمة</string>
+    <string name="max_tokens">الحد الأقصى للرموز (Tokens)</string>
+    <string name="temperature">درجة الإبداع (Temperature)</string>
+    <string name="save_config">حفظ الإعدادات</string>
+
+    <!-- API Keys Screen -->
+    <string name="api_keys">مفاتيح API</string>
+    <string name="manage_api_keys">إدارة مفاتيح API للمزودين</string>
+    <string name="enter_api_key">أدخل مفتاح API</string>
+    <string name="save">حفظ</string>
+    <string name="api_key_info">يتم تخزين المفاتيح بشكل آمن ومشفر على جهازك فقط.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings">الإعدادات</string>
+    <string name="appearance">المظهر</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="follow_system">نفس إعدادات النظام</string>
+    <string name="amoled_dark">أسود داكن (AMOLED)</string>
+    <string name="amoled_desc">لون أسود حقيقي لتوفير الطاقة</string>
+    <string name="blur_control">الشفافية والضبابية</string>
+    <string name="blur_control_desc">التحكم في تأثير الضبابية للخلفية</string>
+    <string name="blur_enabled">تفعيل الضبابية</string>
+    <string name="blur_enabled_desc">تطبيق تأثير الضبابية خلف النوافذ العائمة</string>
+    <string name="blur_intensity">شدة الضبابية</string>
+    <string name="blur_tint_color">لون تظليل الخلفية</string>
+    <string name="color_saturation">تشبع الألوان</string>
+    <string name="general">عام</string>
+    <string name="enable_logging">تفعيل السجلات</string>
+    <string name="logging_desc">عطل هذا الخيار لتحسين الأداء</string>
+    <string name="external_internet">خدمة إنترنت خارجية</string>
+    <string name="external_internet_desc">مستحسن لضمان استقرار الاتصال</string>
+    <string name="backup_restore">النسخ الاحتياطي</string>
+    <string name="export_backup">تصدير نسخة احتياطية</string>
+    <string name="export_backup_desc">حفظ إعداداتك في ملف</string>
+    <string name="import_backup">استعادة نسخة احتياطية</string>
+    <string name="import_backup_desc">استرجاع الإعدادات من ملف</string>
+    <string name="about">حول التطبيق</string>
+
+    <!-- Messages -->
+    <string name="config_saved">تم حفظ الإعدادات</string>
+    <string name="api_key_saved">تم حفظ مفتاح API</string>
+    <string name="api_key_removed">تم حذف مفتاح API</string>
+    <string name="backup_exported">تم تصدير النسخة بنجاح</string>
+    <string name="backup_imported">تمت الاستعادة بنجاح</string>
+    <string name="export_failed">فشل التصدير</string>
+    <string name="import_failed">فشل الاستيراد</string>
+
+    <!-- Themed Icon -->
+    <string name="themed_icon_title">أيقونة النظام (Themed Icon)</string>
+    <string name="themed_icon_desc">تفعيل الأيقونة المتكيفة مع ألوان النظام (من إعدادات المشغل)</string>
+
+    <!-- About Home -->
+    <string name="about_home_title">حول الشاشة الرئيسية</string>
+    <string name="about_home_description">أهلاً بك في KGPT! هذه لوحة التحكم الخاصة بك.\n\n\u2022 حالة الإضافة: تبين ما إذا كانت وحدة Xposed تعمل.\n\n\u2022 النموذج الحالي: يعرض الذكاء الاصطناعي النشط.\n\n\u2022 طرق الاستدعاء: لإعداد الأوامر المختصرة.\n\n\u2022 دليل الاستخدام: نصائح لتحقيق أقصى استفادة.</string>
+
+    <!-- Commands Adapter -->
+    <string name="built_in_indicator">  \u2022  مدمج</string>
+    <string name="ask_command_description">يحافظ على نصك الأصلي ويضيف رد الذكاء الاصطناعي بعده</string>
+    <string name="ask_command_example">مثال: مرحباً /ask كيف حالك؟ \u2192 مرحباً، أنا بخير!</string>
+
+    <!-- AI Response Manager -->
+    <string name="generating_content">&lt;جاري التوليد...&gt;</string>
+    <string name="choose_model_message">يرجى إعداد نموذج اللغة أولاً</string>
+    <string name="missing_api_key_message">مفتاح API مفقود لـ %1$s</string>
+    <string name="unknown_error">حدث خطأ غير معروف</string>
+    <string name="error_format">[خطأ: %1$s]</string>
+
+    <!-- Text Actions -->
+    <string name="action_rephrase">إعادة صياغة</string>
+    <string name="action_fix_errors">تصحيح الأخطاء</string>
+    <string name="action_improve">تحسين الأسلوب</string>
+    <string name="action_expand">توسيع النص</string>
+    <string name="action_shorten">تلخيص</string>
+    <string name="action_formal">رسمي</string>
+    <string name="action_casual">ودي</string>
+    <string name="action_translate">ترجمة</string>
+
+    <!-- UI Messages -->
+    <string name="msg_copied">تم النسخ</string>
+    <string name="msg_ai_error">خطأ AI: %1$s</string>
+    <string name="msg_no_text_selected">لم يتم تحديد نص</string>
+    <string name="edit_prompt_title">تعديل التوجيه لـ %1$s</string>
+    <string name="text_action_commands_title">أوامر الإجراءات المتاحة:</string>
+    <string name="text_action_commands_example">مثال: "مرحباً بالعالم $rephrase"</string>
+    <string name="missing_api_key_generic">مفتاح API مفقود. الرجاء إضافته من الإعدادات.</string>
+    <string name="action_add_custom">إضافة إجراء مخصص</string>
+    <string name="label_custom_action">إجراء مخصص</string>
+    <string name="error_missing_name_prompt">الرجاء إدخال الاسم والتوجيه</string>
+    <string name="dialog_title_add_custom_action">إجراء جديد</string>
+    <string name="dialog_subtitle_add_custom_action">أنشئ إجراء ذكاء اصطناعي خاص بك</string>
+    <string name="label_action_name">اسم الإجراء</string>
+    <string name="label_system_prompt">توجيه النظام (System Prompt)</string>
+    <string name="helper_system_prompt">تعليمات تشرح للذكاء الاصطناعي كيفية معالجة النص</string>
+    <string name="cancel">إلغاء</string>
+    <string name="add">إضافة</string>
+    <string name="delete">حذف</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="dialog_title_edit_custom_action">تعديل الإجراء</string>
+    <string name="dialog_subtitle_edit_custom_action">عدل تفاصيل الإجراء المخصص</string>
+    <string name="dialog_title_edit_prompt">تعديل التوجيه</string>
+    <string name="dialog_subtitle_edit_prompt">تخصيص تعليمات الذكاء الاصطناعي</string>
+
+    <!-- System Prompts -->
+    <string name="prompt_rephrase">أنت مساعد لغوي متخصص. أعد صياغة النص التالي بأسلوب مختلف مع الحفاظ على المعنى الدقيق. حافظ على لغة النص الأصلية. أخرج النص المعاد صياغته فقط.</string>
+    <string name="prompt_fix_errors">أنت مدقق لغوي. صحح الأخطاء الإملائية والنحوية في النص التالي. حافظ على المعنى واللغة الأصلية. أخرج النص المصحح فقط.</string>
+    <string name="prompt_improve">أنت محرر نصوص محترف. حسن أسلوب، وضوح، وتدفق النص التالي مع الحفاظ على المعنى. حافظ على لغة النص الأصلية. أخرج النص المحسن فقط.</string>
+    <string name="prompt_expand">أنت كاتب مبدع. قم بتوسيع النص التالي بإضافة تفاصيل ذات صلة، أمثلة، أو توضيحات، مع الحفاظ على الفكرة الأساسية. حافظ على اللغة الأصلية. أخرج النص الموسع فقط.</string>
+    <string name="prompt_shorten">أنت ملخص نصوص. قم بتلخيص النص التالي مع الحفاظ على النقاط الجوهرية. حافظ على اللغة الأصلية. أخرج الملخص فقط.</string>
+    <string name="prompt_formal">أنت مساعد للتواصل المهني. حول النص التالي إلى أسلوب رسمي ومحترم. حافظ على المعنى واللغة الأصلية. أخرج النسخة الرسمية فقط.</string>
+    <string name="prompt_casual">أنت مساعد للتواصل الودي. حول النص التالي إلى أسلوب بسيط وغير رسمي. حافظ على المعنى واللغة الأصلية. أخرج النسخة الودية فقط.</string>
+    <string name="prompt_translate_auto">أنت مترجم محترف. اكتشف لغة النص وترجمه إلى اللغة المقابلة (إذا كان عربياً ترجمه للإنجليزية، وإذا كان إنجليزياً أو لغة أخرى ترجمه للعربية). أخرج الترجمة فقط.</string>
+    <string name="prompt_translate_target">أنت مترجم محترف. ترجم النص التالي إلى %1$s. أخرج الترجمة فقط.</string>
+    <string name="prompt_default">عالج النص التالي:</string>
+
+    <!-- Update Dialog -->
+    <string name="update_available">تحديث جديد</string>
+    <string name="update_available_desc">نسخة جديدة من KGPT متاحة للتنزيل.</string>
+    <string name="update_available_title">يوجد تحديث!</string>
+    <string name="update_app_desc">الإصدار %1$s متاح الآن.\nإصدارك الحالي هو v%2$s.</string>
+    <string name="no_changelog">سجل التغييرات غير متاح.</string>
+    <string name="downloading">جارٍ التنزيل... %1$d%%</string>
+    <string name="starting_download">بدء التنزيل...</string>
+    <string name="download_title">تنزيل التحديث</string>
+    <string name="download_complete">اكتمل التنزيل</string>
+    <string name="ready_to_install">جاهز للتثبيت!</string>
+    <string name="up_to_date_title">التطبيق محدث</string>
+    <string name="up_to_date_desc">أنت تستخدم أحدث إصدار (v%1$s).\nلا توجد تحديثات جديدة حالياً.</string>
+    <string name="check_failed">فشل التحقق</string>
+    <string name="check_failed_desc">عذراً، تعذر التحقق من التحديثات.\n\n%1$s\n\nتأكد من اتصالك بالإنترنت وحاول مجدداً.</string>
+    <string name="no_internet">لا يوجد اتصال</string>
+    <string name="no_internet_desc">لا يمكن التحقق من التحديثات بدون إنترنت.</string>
+
+    <!-- Update Actions -->
+    <string name="btn_download">تنزيل</string>
+    <string name="btn_later">لاحقاً</string>
+    <string name="btn_install">تثبيت</string>
+    <string name="btn_try_again">إعادة المحاولة</string>
+    <string name="btn_close">إغلاق</string>
+    <string name="btn_ok">موافق</string>
+    <string name="btn_great">رائع</string>
+    <string name="btn_got_it">فهمت</string>
+    <string name="btn_save">حفظ</string>
+    <string name="btn_reset">إعادة تعيين</string>
+    <string name="btn_proceed">استمرار</string>
+    <string name="btn_restart_now">إعادة التشغيل</string>
+    <string name="btn_save_color">حفظ اللون</string>
+
+    <!-- How to Use -->
+    <string name="how_to_use_title">كيفية استخدام KGPT</string>
+    <string name="quick_guide">دليل سريع</string>
+    <string name="guide_step_1">فعل الإضافة من مدير LSPosed</string>
+    <string name="guide_step_2">اختر نموذج الذكاء الاصطناعي</string>
+    <string name="guide_step_3">أدخل مفتاح API الخاص بك</string>
+    <string name="guide_step_4">اكتب نصك، ثم أضف رمز التفعيل في نهايته ($)</string>
+    <string name="guide_step_5">سيظهر رد الذكاء الاصطناعي مباشرة</string>
+    <string name="example">مثال</string>
+    <string name="guide_example_text">ما هي عاصمة مصر؟$</string>
+
+    <!-- Backup & Restore Dialogs -->
+    <string name="backup_settings_title">إعدادات النسخ الاحتياطي</string>
+    <string name="restore_settings_title">استعادة الإعدادات</string>
+    <string name="backup_settings_desc">حدد ما تريد نسخه</string>
+    <string name="restore_settings_desc">حدد ما تريد استعادته</string>
+    <string name="action_backup">نسخ احتياطي</string>
+    <string name="action_restore">استعادة</string>
+    <string name="select_all">تحديد الكل</string>
+
+    <!-- Backup Options -->
+    <string name="option_ai_commands">أوامر AI</string>
+    <string name="option_ai_commands_desc">الأوامر والتوجيهات المخصصة</string>
+    <string name="option_trigger_patterns">أنماط التفعيل</string>
+    <string name="option_trigger_patterns_desc">أنماط تشغيل لوحة المفاتيح</string>
+    <string name="option_ai_model">إعدادات النموذج</string>
+    <string name="option_ai_model_desc">النماذج المختارة وتكويناتها</string>
+    <string name="option_appearance">المظهر</string>
+    <string name="option_appearance_desc">السمة والألوان</string>
+    <string name="option_blur">الضبابية</string>
+    <string name="option_blur_desc">إعدادات الشفافية</string>
+    <string name="option_general">إعدادات عامة</string>
+    <string name="option_general_desc">السجلات وخيارات الشبكة</string>
+    <string name="option_app_triggers">مشغلات التطبيقات</string>
+    <string name="option_app_triggers_desc">الإعدادات الخاصة بكل تطبيق</string>
+    <string name="option_text_actions">إجراءات النصوص</string>
+    <string name="option_text_actions_desc">قائمة الإجراءات العائمة</string>
+    <string name="option_sensitive_data">البيانات الحساسة (API Keys)</string>
+    <string name="option_sensitive_data_desc">تحذير: يشمل مفاتيح API الخاصة بك. لا تشارك الملف!</string>
+
+    <!-- Backup Warning Dialog -->
+    <string name="backup_warning_title">تحذير أمني</string>
+    <string name="backup_warning_keys">تحتوي هذه النسخة على مفاتيح API الخاصة بك.</string>
+    <string name="backup_warning_risk">مشاركة هذا الملف قد تعرض رصيدك للاستخدام من قبل الآخرين.\nالمطور غير مسؤول عن أي سوء استخدام.</string>
+    <string name="backup_warning_confirm">هل أنت متأكد من المتابعة؟</string>
+    <string name="backup_warning_hint">نعم</string>
+
+    <!-- Info Dialog -->
+    <string name="info_title">حول الصفحة</string>
+    <string name="info_chip">معلومات</string>
+    <string name="info_default_desc">تفاصيل حول هذه الوظيفة.</string>
+
+    <!-- Restart Dialog -->
+    <string name="restart_required_title">مطلوب إعادة التشغيل</string>
+    <string name="restart_required_desc">يجب إعادة تشغيل التطبيق لتطبيق التغييرات.</string>
+
+    <!-- Delete Confirmation -->
+    <string name="delete_title">حذف العنصر</string>
+    <string name="delete_message">هل أنت متأكد من الحذف؟</string>
+    <string name="item_name_placeholder">الاسم</string>
+    <string name="btn_cancel">إلغاء</string>
+
+    <!-- Web Search Dialog -->
+    <string name="web_search_title">بحث الويب</string>
+    <string name="select_search_engine_title">محرك البحث</string>
+    <string name="select_search_engine_desc">اختر محرك البحث الافتراضي</string>
+
+    <!-- Log Export Success -->
+    <string name="logs_exported_title">تم تصدير السجلات</string>
+    <string name="root_access_granted">صلاحيات الروت ممنوحة</string>
+    <string name="logs_exported_desc">تم حفظ السجلات التالية:</string>
+    <string name="log_device_info">• معلومات الجهاز</string>
+    <string name="log_xposed">• سجلات Xposed/LSPosed</string>
+    <string name="log_kgpt">• سجلات KGPT</string>
+    <string name="log_boot">• سجلات النظام (dmesg)</string>
+    <string name="log_system">• سجلات التطبيقات (logcat)</string>
+    <string name="log_crash">• تقارير الأعطال</string>
+    <string name="root_explanation">تم استخدام الروت لجمع سجلات النظام العميقة للمساعدة في حل المشكلة.</string>
+    <string name="btn_done">تم</string>
+
+    <!-- Delete Custom Action / Trigger -->
+    <string name="delete_action_title">حذف الإجراء</string>
+    <string name="delete_action_desc">هل تريد حذف هذا الإجراء المخصص نهائياً؟</string>
+    <string name="delete_trigger_title">حذف المشغّل</string>
+    <string name="delete_trigger_desc">هل تريد إزالة مشغّل هذا التطبيق؟</string>
+    <string name="action_delete">حذف</string>
+
+    <!-- Color Picker -->
+    <string name="title_choose_color">اختر اللون</string>
+    <string name="label_color_code">كود اللون (HEX)</string>
+
+    <!-- Quick Guide -->
+    <string name="quick_guide_title">الدليل السريع</string>
+    <string name="quick_guide_subtitle">النص + رمز التفعيل</string>
+    <string name="guide_ai_trigger_title">تفعيل AI</string>
+    <string name="guide_ai_trigger_example">ما هذا؟$</string>
+    <string name="guide_inline_ask_title">/ask (إبقاء السؤال)</string>
+    <string name="guide_inline_ask_example">/ask كم الساعة؟$</string>
+    <string name="guide_commands_title">الأوامر</string>
+    <string name="guide_commands_example">مرحباً /translate$</string>
+    <string name="guide_formatting_title">الرموز</string>
+    <string name="guide_formatting_example">نص$ نص@ نص#</string>
+
+    <!-- Changelog -->
+    <string name="title_changelog">سجل التغييرات</string>
+
+    <!-- App Selection -->
+    <string name="title_select_app">اختر تطبيقاً</string>
+    <string name="chip_all">الكل</string>
+    <string name="chip_user">المستخدم</string>
+    <string name="chip_system">النظام</string>
+    <string name="hint_search_apps">بحث...</string>
+    <string name="msg_loading_apps">جاري التحميل...</string>
+
+    <!-- API Key Dialog -->
+    <string name="title_add_api_key">إضافة مفتاح</string>
+    <string name="desc_add_api_key">اختر الخدمة لإضافة مفتاح جديد.</string>
+
+    <!-- Action Picker Dialog -->
+    <string name="title_add_actions">إضافة إجراءات</string>
+    <string name="desc_add_actions">اختر الإجراءات للإضافة</string>
+
+    <!-- Logging Warning Dialog -->
+    <string name="title_logging_disabled">السجلات معطلة</string>
+    <string name="desc_logging_disabled">يجب تفعيل خيار "السجلات" في الإعدادات أولاً لتتمكن من التصدير.</string>
+    <string name="btn_enable_logging">تفعيل السجلات</string>
+
+    <!-- Update Interval Dialog -->
+    <string name="title_check_frequency">تكرار التحقق</string>
+    <string name="desc_check_frequency">كم مرة نتحقق من التحديثات؟</string>
+
+    <!-- Dialog Titles & Labels -->
+    <string name="title_choose_model">اختيار النموذج</string>
+    <string name="label_select_provider_hint">حدد المزود لهذا المفتاح</string>
+    <string name="hint_select_provider">اختر المزود</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_search_engine">محرك البحث</string>
+    <string name="placeholder_model_name">Gemini</string>
+    <string name="placeholder_item_name">الاسم</string>
+    <string name="placeholder_changelog_desc">التفاصيل</string>
+    <string name="tag_add">جديد</string>
+
+    <!-- Configure Model Strings -->
+    <string name="configure_model_title">تهيئة النموذج</string>
+    <string name="advanced_settings_title">متقدم</string>
+
+    <!-- Edit Command Dialog -->
+    <string name="edit_command_title">تعديل الأمر</string>
+    <string name="hint_command_prefix">البادئة (مثلاً /ask)</string>
+    <string name="hint_prompt">التوجيه (Prompt)</string>
+
+    <!-- Edit Trigger Symbol Dialog -->
+    <string name="title_edit_trigger_symbol">تعديل الرمز</string>
+    <string name="desc_edit_trigger_symbol">الرمز الذي يفعل هذا الإجراء</string>
+    <string name="label_enable_trigger">تفعيل المشغّل</string>
+    <string name="desc_enable_trigger">تشغيل/إيقاف هذا الرمز</string>
+    <string name="hint_trigger_symbol">الرمز</string>
+    <string name="label_preview">معاينة</string>
+
+    <!-- App Trigger Dialog -->
+    <string name="hint_trigger_word">كلمة التفعيل</string>
+    <string name="helper_trigger_word">الكلمة التي تفتح التطبيق</string>
+    <string name="example_trigger_word">مثال: "كروم" لفتح المتصفح</string>
+
+    <!-- Dialog List -->
+    <string name="msg_no_items">لا يوجد عناصر</string>
+
+    <!-- Dialog Add Trigger -->
+    <string name="title_add_trigger_symbol">إضافة رمز</string>
+    <string name="desc_add_trigger_symbol">أدخل 1-3 أحرف للتفعيل</string>
+    <string name="hint_trigger_example">مثال: @@ أو ##</string>
+    
+    <!-- API Key Items -->
+    <string name="status_free">مجاني</string>
+    <string name="btn_save_key">حفظ</string>
+    <string name="btn_get_key">الحصول على مفتاح</string>
+    <string name="placeholder_provider_chatgpt">ChatGPT</string>
+    <string name="placeholder_action_name">اسم الإجراء</string>
+    <string name="placeholder_description">الوصف</string>
+    <string name="placeholder_action">إجراء</string>
+
+    <!-- Home Fragment -->
+    <string name="version_placeholder">v4.0.0</string>
+    <string name="tag_stable">مستقر</string>
+    <string name="commands_patterns_desc">الأوامر والأنماط</string>
+    <string name="section_information">معلومات</string>
+
+    <!-- Fragment Models -->
+    <string name="sub_model_desc">اختر من القائمة أو أدخل مخصصاً</string>
+    <string name="hint_custom_model">اسم النموذج المخصص</string>
+    
+    <!-- Languages -->
+    <string-array name="languages_list">
+        <item>العربية</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+        <item>Русский</item>
+        <item>Türkçe</item>
+        <item>简体中文</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>हिन्दी</item>
+        <item>Português</item>
+        <item>Bahasa Indonesia</item>
+    </string-array>
+
+    <!-- New Strings extracted from layouts -->
+    <string name="title_app_triggers">مشغلات التطبيقات</string>
+    <string name="lab_badge">مختبر</string>
+    <string name="app_triggers_intro">افتح تطبيقاتك بسرعة بكتابة اسمها</string>
+    <string name="btn_enable_app_triggers">تفعيل مشغلات التطبيقات</string>
+    <string name="desc_enable_app_triggers">اكتب الكلمة للفتح المباشر</string>
+    <string name="msg_no_triggers">لم تضف أي مشغلات بعد.\nاضغط الزر أعلاه للبدء.</string>
+    <string name="guide_triggers_usage">• اكتب الكلمة ← يفتح التطبيق\n• اضغط البطاقة للتعديل</string>
+    
+    <string name="material_you_blur">تمويه Material You</string>
+    <string name="use_dynamic_app_colors">استخدام ألوان التطبيقات الديناميكية</string>
+    <string name="reset_settings">إعادة تعيين الإعدادات</string>
+    <string name="performance_tip">نصيحة للأداء</string>
+    <string name="performance_tip_desc">عطل هذا الخيار على الأجهزة القديمة.</string>
+    
+    <string name="kgpt_lab">مختبر KGPT</string>
+    <string name="experimental_badge">تجريبي</string>
+    <string name="lab_warning">ميزات قيد التطوير. استخدمها بحذر.</string>
+    <string name="desc_open_apps">الفتح السريع للتطبيقات</string>
+    <string name="new_badge">جديد</string>
+    <string name="desc_text_actions">إجراءات سريعة على أي نص</string>
+    <string name="text_actions_intro">إجراءات ذكية على النصوص. حدد النص واختر الإجراء.</string>
+    <string name="coming_soon">المزيد قريباً...</string>
+    
+    <string name="title_material_you">سمة Material You</string>
+    <string name="desc_material_you">تخصيص الألوان الديناميكية</string>
+    <string name="use_wallpaper_colors">ألوان الخلفية</string>
+    <string name="extract_wallpaper_colors">استخراج الألوان من الخلفية</string>
+    <string name="seed_color">لون أساسي</string>
+    <string name="manual_color_select">اختيار يدوي</string>
+    <string name="enable_text_actions">تفعيل إجراءات النص</string>
+    
+    <string name="title_show_labels">إظهار الأسماء</string>
+    <string name="desc_show_labels">عرض أسماء الإجراءات تحت الأيقونات</string>
+    <string name="title_available_actions">الإجراءات المتاحة</string>
+    <string name="action_tip_title">اضغط لتعديل التوجيه</string>
+    <string name="action_tip_desc">حدد نصاً لإظهار القائمة العائمة</string>
+    <string name="msg_enable_text_actions">فعل هذه الميزة لتخصيص القائمة</string>
+    <string name="desc_enable_text_actions_sub">قائمة عائمة عند تحديد نص</string>
+    <string name="title_ai_text_actions">إجراءات AI للنصوص</string>
+    
+    <!-- Update & Status Strings -->
+    <string name="new_update_badge">تحديث</string>
+    <string name="update_changelog_placeholder">• إصلاحات عامة...</string>
+    <string name="title_downloading_update">جاري التنزيل</string>
+    <string name="msg_downloading">جارٍ التحميل...</string>
+    <string name="download_progress_placeholder">... / ...</string>
+    <string name="action_cancel_download">إلغاء</string>
+    <string name="action_download_update">تنزيل</string>
+    <string name="action_remind_later">لاحقاً</string>
+    <string name="action_install_update">تثبيت</string>
+    <string name="title_status_placeholder">الحالة</string>
+    <string name="msg_status_placeholder">.الرسالة</string>
+    <string name="action_primary_placeholder">إجراء</string>
+    <string name="action_secondary_placeholder">ثانوي</string>
+    <string name="title_update_settings">إعدادات التحديث</string>
+    <string name="title_auto_updates">تحديث تلقائي</string>
+    <string name="switch_auto_updates">تفعيل</string>
+    <string name="desc_auto_updates">فحص دوري</string>
+    <string name="title_check_interval">كل</string>
+    <string name="interval_24h">24 ساعة</string>
+    <string name="title_download_path">مسار التنزيل</string>
+    <string name="path_default_downloads">مجلد التنزيلات</string>
+    <string name="desc_app_tagline">الذكاء الاصطناعي في لوحة مفاتيحك</string>
+
+    <!-- Command & Pattern Dialogs -->
+    <string name="title_add_command">إضافة أمر</string>
+    <string name="desc_add_command">أمر جديد لتفعيل AI</string>
+    <string name="hint_command_name">الاسم</string>
+    <string name="hint_system_message">رسالة النظام</string>
+    <string name="help_command_usage">الاستخدام: نص للأمر + الرمز</string>
+    <string name="title_edit_pattern">تعديل النمط</string>
+    <string name="desc_edit_pattern">تخصيص نمط Regex</string>
+    <string name="hint_regex_pattern">Regex</string>
+    <string name="help_regex_default">الافتراضي: يلتقط كل شيء</string>
+    <string name="title_other_settings">أخرى</string>
+    <string name="enable_trigger">تفعيل</string>
+    <string name="hint_description">وصف</string>
+    <string name="reset_default">استعادة الأصلي</string>
+    <string name="hint_example">مثال</string>
+    <string name="no_commands">لا يوجد أوامر</string>
+
+    <!-- Settings Fragment Extras -->
+    <string name="winter_mode">وضع الشتاء</string>
+    <string name="winter_mode_desc">تأثير تساقط الثلوج</string>
+    <string name="title_settings_backup">نسخ البيانات</string>
+    <string name="desc_settings_backup">نسخ الإعدادات</string>
+    <string name="title_settings_restore">استعادة البيانات</string>
+    <string name="desc_settings_restore">استعادة الإعدادات</string>
+    <string name="support_group">مجموعة الدعم</string>
+    <string name="title_export_logs">تصدير السجلات</string>
+    <string name="desc_export_logs">للمساعدة في الحل</string>
+    <string name="title_updates">التحديثات</string>
+    <string name="desc_updates_config">إدارة التحديثات</string>
+    
+    <!-- Web Search -->
+    <string name="open_in_browser">فتح في المتصفح</string>
+    <string name="hint_enter_url">الرابط</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+
+    <!-- Easter Egg -->
+    <string name="cat_caught_title">مياو!</string>
+    <string name="cat_caught_msg">لقد اكتشفت القطة!\nهل يمكنك دعمنا بنجمة على GitHub؟</string>
+    <string name="cat_action_star">نعم، سأدعمكم</string>
+    <string name="cat_action_later">لاحقاً</string>
+
+    <!-- Invocation Patterns -->
+    <string name="quick_example">مثال</string>
+    <string name="example_pattern_usage">اكتب السؤال ثم الرمز</string>
+    <string name="active_triggers">المشغلات النشطة</string>
+    
+    <!-- Misc -->
+    <string name="action_placeholder">إجراء</string>
+    <string name="version_v4_1_0">v4.1.0</string>
+
+    <!-- API Keys Fragment -->
+    <string name="api_keys_description">إدارة المفاتيح</string>
+    <string name="gemini_api_title">Gemini API</string>
+    <string name="free_api_badge">مجاني</string>
+    <string name="gemini_api_description">المفتاح الأساسي</string>
+    <string name="gemini_api_key_hint">مفتاح Gemini</string>
+    <string name="save_key">حفظ</string>
+    <string name="get_key">احصل على مفتاح</string>
+    <string name="additional_keys_title">مفاتيح إضافية</string>
+    <string name="add_key_button">+ مفتاح</string>
+    <string name="add_key_desc">لمزودين آخرين</string>
+    <string name="privacy_notice_title">خصوصية</string>
+    <string name="privacy_notice_desc">المفاتيح تبقى على جهازك</string>
+
+    <!-- Settings Fragment Misc -->
+    <string name="settings_appearance">المظهر</string>
+    <string name="material_you_title">أسود داكن</string>
+    <string name="material_you_desc">لشاشات OLED</string>
+    <string name="provider_title">اتصال خارجي</string>
+    <string name="provider_desc">إكمال المحادثة (Chat Completion)</string>
+    <string name="about_settings">حول</string>
+    <string name="changelog">التغييرات</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="title_ai_settings">إعدادات AI</string>
+    <string name="desc_ai_settings">الموديل و API</string>
+    <string name="current_version_label">الحالي</string>
+    <string name="step_1">١</string>
+    <string name="step_2">٢</string>
+    <string name="step_3">٣</string>
+    <string name="step_4">٤</string>
+    <string name="step_5">٥</string>
+    <string name="title_ai_invocation">التفعيل</string>
+    <string name="desc_ai_invocation">الأوامر والمشغلات</string>
+    <string name="hash_symbol">#</string>
+    <string name="default_hex_code">FF5733</string>
+    <string name="duration_6s">6s</string>
+    <string name="language">اللغة</string>
+    <string name="language_desc">لغة التطبيق</string>
+    <string name="select_language">اختر اللغة</string>
+    
+    <!-- About Settings Info -->
+    <string name="about_settings_title">حول الإعدادات</string>
+    <string name="about_settings_desc">خصص تجربتك مع KGPT.\n\n• الوضع الداكن: تفعيل السمة الداكنة للراحة ليلاً.\n\n• أسود AMOLED: لون أسود نقي لشاشات OLED لتوفير البطارية.\n\n• تفعيل السجلات: لتشخيص المشاكل. أوقفها لتحسين الأداء.\n\n• الاتصال الخارجي: مُوصى به لإكمال المحادثات مع الذكاء الاصطناعي.</string>
+    
+    <!-- Logging Warning Bottom Sheet -->
+    <string name="logging_warning_title">تفعيل السجلات؟</string>
+    <string name="logging_warning_desc">السجلات معطلة حالياً. يجب تفعيلها لتصدير السجلات.</string>
+    <string name="btn_enable_logging_action">تفعيل السجلات</string>
+    <string name="logging_enabled_toast">تم تفعيل السجلات. يمكنك الآن التصدير.</string>
+    
+    <!-- Export Success Bottom Sheet -->
+    <string name="export_success_title">نجاح التصدير</string>
+    <string name="export_success_desc">تم حفظ السجلات في:</string>
+    <string name="root_status_label">حالة الروت</string>
+    <string name="boot_logs_label">سجلات الإقلاع</string>
+    <string name="system_logs_label">سجلات النظام</string>
+    <string name="crash_logs_label">سجلات الأعطال</string>
+    <string name="app_logs_label">سجلات التطبيق</string>
+    <string name="available">متاح</string>
+    <string name="unavailable">غير متاح</string>
+    
+    <!-- Tab Names -->
+    <string name="tab_commands">الأوامر</string>
+    <string name="tab_triggers">المشغلات</string>
+    
+    <!-- Dock Actions -->
+    <string name="dock_add_command">إضافة أمر</string>
+    <string name="dock_how_to_use">دليل الاستخدام</string>
+    
+    <!-- Pattern Types (Triggers) -->
+    <string name="pattern_settings">الإعدادات</string>
+    <string name="pattern_ai_trigger">مشغل AI</string>
+    <string name="pattern_custom_command">أمر مخصص</string>
+    <string name="pattern_italic">مائل</string>
+    <string name="pattern_bold">عريض</string>
+    <string name="pattern_crossout">مشطوب</string>
+    <string name="pattern_underline">تحته خط</string>
+    <string name="pattern_web_search">بحث الويب</string>
+    
+    <!-- Pattern Descriptions -->
+    <string name="pattern_desc_settings">مشغل الإعدادات</string>
+    <string name="pattern_desc_ai_trigger">اكتب النص ثم أضف $ في النهاية</string>
+    <string name="pattern_desc_custom_command" formatted="false">اكتب النص ثم أضف %الأمر%</string>
+    <string name="pattern_desc_italic">اكتب النص ثم أضف |</string>
+    <string name="pattern_desc_bold">اكتب النص ثم أضف @</string>
+    <string name="pattern_desc_crossout">اكتب النص ثم أضف ~</string>
+    <string name="pattern_desc_underline">اكتب النص ثم أضف _</string>
+    <string name="pattern_desc_web_search">اكتب النص ثم أضف ?? للبحث</string>
+    
+    <!-- Pattern Status -->
+    <string name="status_disabled">معطل</string>
+    
+    <!-- Update Interval Options -->
+    <string name="interval_every_hour">كل ساعة</string>
+    <string name="interval_every_6_hours">كل 6 ساعات</string>
+    <string name="interval_every_12_hours">كل 12 ساعة</string>
+    <string name="interval_every_day">كل يوم</string>
+    <string name="interval_every_2_days">كل يومين</string>
+    <string name="interval_every_week">كل أسبوع</string>
+    <string name="interval_disabled">معطل</string>
+    <string name="interval_every_n_hours">كل %d ساعات</string>
+    
+    <!-- Download Path Options -->
+    <string name="path_default_downloads_option">الافتراضي (التنزيلات)</string>
+    <string name="path_choose_custom">اختيار مجلد مخصص</string>
+    <string name="path_internal_storage">التخزين الداخلي</string>
+    
+    <!-- Update Check -->
+    <string name="check_for_updates">التحقق من التحديثات</string>
+    <string name="checking_updates">جاري التحقق...</string>
+    
+    <!-- AI Settings Tabs -->
+    <string name="tab_model">النموذج</string>
+    <string name="tab_api_keys">مفاتيح API</string>
+    
+    <!-- Dock Actions -->
+    <string name="dock_add_app_trigger">إضافة مشغل تطبيق</string>
+
+    <!-- Changelog Items -->
+    <string name="tag_added">إضافة</string>
+    <string name="tag_improved">تحسين</string>
+    <string name="tag_fixed">إصلاح</string>
+
+    <string name="changelog_1_0_0_item1">تم إضافة وضع Google AI Mode من ضمن خيارات البحث على الويب</string>
+    <string name="changelog_1_0_0_item2">تم إضافة إمكانية اختيار لغة معينة مع دعم جميع اللغات المتاحة</string>
+    <string name="changelog_1_0_0_item3">تم تحسين بعض الشاشات لتناسب سهولة استخدام اليد الواحدة والأصابع الكبيرة</string>
+    <string name="changelog_1_0_0_item4">تم تصحيح الكثير من الأخطاء المتعلقة بالاستقرار وتحسين الأداء</string>
+    <string name="changelog_1_0_0_item5">تم اختبار ودعم لوحة مفاتيح FUTO</string>
+    <string name="changelog_1_0_0_item6">تم إصلاح مشكلة عدم الاتصال الناجح مع Chutes API</string>
+    <string name="changelog_1_0_0_item7">تم إضافة موديل جديد Perplexity ودعم Perplexity API</string>
+    <string name="changelog_1_0_0_item8">تم إلغاء التقييد باستخدام علامة \"/\" فيما يخص استخدام الأوامر</string>
+    <string name="changelog_1_0_0_note">برجاء التحلي بالصبر حيث تم إعلام المطور بالمزيد من المشكلات ولكن سيتم حلها على دفعات من التحديثات حيث أنه شخص واحد فقط يقف وراء تطوير كل هذا. شكراً لتفهمكم.</string>
+
+    <string name="changelog_4_0_8_item1">تم اصلاح تحطم التطبيق عند تغيير اللغة ومحاولة دخول قسم AI Invocation</string>
+    <string name="changelog_4_0_8_item2">تم تحسين تصميم ظهور التنبيه فى سجل التغيرات داخل التطبيق</string>
+    <string name="changelog_4_0_8_item3">تم اضافة الدعم لاستخدام مودلات GLM المقدمة من ZhipuAI</string>
+    <string name="changelog_4_0_8_item4">تم اصلاح مشكلة عدم وجود مسافة عند استخدام اوامر تشكيل النص</string>
+    <string name="changelog_4_0_8_item5">تم إصلاح مشكلة اختفاء النص عند استخدام تريجر غير مسجل أو عند عدم تلقي رد من الذكاء الاصطناعي</string>
+    <string name="changelog_note_4_0_8">برجاء التحلي بالصبر حيث تم إعلام المطور بالمزيد من المشكلات ولكن سيتم حلها على دفعات من التحديثات حيث أنه شخص واحد فقط يقف وراء تطوير كل هذا. شكراً لتفهمكم.</string>
+    
+    <!-- Language Selection -->
+    <string name="hint_search_language">بحث عن لغة...</string>
+
+    <string name="new_command_title">أمر جديد</string>
+    <string name="error_prefix_empty">لا يمكن أن تكون البادئة فارغة</string>
+    <string name="error_message_empty">لا يمكن أن تكون الرسالة فارغة</string>
+    <string name="error_duplicate_command">يوجد أمر آخر بنفس الاسم</string>
+    <string name="format_edit_pattern_title">تعديل %1$s</string>
+    <string name="error_symbol_empty">لا يمكن أن يكون الرمز فارغاً</string>
+    <string name="error_symbol_not_allowed">هذا الرمز غير مسموح به</string>
+    <string name="error_pattern_creation_failed">تعذر إنشاء نمط لهذا الرمز</string>
+    <string name="error_pattern_invalid">تم إنشاء نمط غير صالح</string>
+    <string name="error_pattern_duplicate">هذا الرمز مستخدم بالفعل في نمط آخر</string>
+    <string name="msg_trigger_enabled">تم تفعيل المشغل "%1$s"</string>
+    <string name="msg_trigger_disabled">تم تعطيل المشغل "%1$s"</string>
+    <string name="example_preview_settings">"%1$s" ← يفتح الإعدادات</string>
+    <string name="example_preview_ai">"مرحبا%1$s" ← يرد الذكاء الاصطناعي</string>
+    <string name="example_preview_custom">"مرحبا%1$sترجم%1$s" ← يترجم</string>
+    <string name="example_preview_italic">"نص%1$s" ← نص مائل</string>
+    <string name="example_preview_bold">"نص%1$s" ← نص عريض</string>
+    <string name="example_preview_crossout">"نص%1$s" ← يتوسطه خط</string>
+    <string name="example_preview_underline">"نص%1$s" ← تحته خط</string>
+    <string name="example_preview_default">اكتب النص، ثم أضف "%1$s" في النهاية</string>
+    <string name="msg_theme_updated">تم تحديث السمة</string>
+    <string name="msg_settings_restored">تم استعادة الإعدادات</string>
+    <string name="msg_requesting_root">جاري طلب صلاحيات الروت...</string>
+    <string name="msg_root_denied">تم رفض الروت - قد تكون بعض السجلات محدودة</string>
+    <string name="msg_exporting_logs">جاري تصدير السجلات...</string>
+    <string name="msg_export_failed_prefix">فشل تصدير السجلات: </string>
+    <string name="msg_backup_save_failed">فشل حفظ النسخة الاحتياطية</string>
+    <string name="msg_backup_create_error_prefix">خطأ في إنشاء النسخة الاحتياطية: </string>
+    <string name="msg_backup_read_failed">فشل قراءة ملف النسخة الاحتياطية</string>
+    <string name="msg_no_restore_data">لم يتم العثور على بيانات قابلة للاستعادة</string>
+    <string name="msg_restore_failed_prefix">فشلت الاستعادة: </string>
+    <string name="msg_select_model_toast">الرجاء اختيار نموذج</string>
+    <string name="msg_settings_not_available">الإعدادات غير متوفرة</string>
+    <string name="msg_config_saved_with">تم حفظ الإعدادات مع </string>
+    <string name="msg_config_saved_warning">تم الحفظ (قد لا يعمل النموذج)</string>
+    <string name="msg_config_saved">تم حفظ الإعدادات</string>
+    <string name="msg_symbol_empty">الرمز لا يمكن أن يكون فارغاً</string>
+    <string name="msg_symbol_not_allowed">هذا الرمز غير مسموح به</string>
+    <string name="msg_pattern_create_failed">تعذر إنشاء النمط</string>
+    <string name="msg_pattern_invalid">نمط غير صالح</string>
+    <string name="msg_trigger_status_format">المشغل "%1$s" %2$s</string>
+
+    <string name="msg_command_name_required">اسم الأمر مطلوب</string>
+    <string name="msg_command_exists">الأمر موجود بالفعل</string>
+    <string name="msg_command_builtin_conflict">لا يمكن استخدام اسم أمر مدمج</string>
+    <string name="msg_command_added">تم إضافة الأمر</string>
+    <string name="msg_command_updated">تم تحديث الأمر</string>
+    <string name="msg_inline_ask_updated">تم تحديث أمر السؤال المضمن</string>
+    <string name="msg_command_deleted">تم حذف الأمر</string>
+    <string name="msg_open_url_failed">تعذر فتح الرابط</string>
+    <string name="msg_enter_api_key">الرجاء إدخال مفتاح API</string>
+    <string name="msg_gemini_key_saved">تم حفظ مفتاح Gemini API</string>
+    <string name="msg_all_providers_added">تم إضافة جميع مقدمي الخدمة</string>
+    <string name="msg_enter_trigger">الرجاء إدخال مشغل</string>
+    <string name="msg_cat_caught_toast">مياو! لقد أمسكت بي! 🐱</string>
+    <string name="msg_pattern_create_symbol_failed">تعذر إنشاء نمط لهذا الرمز</string>
+    <string name="msg_pattern_generated_invalid">تم إنشاء نمط غير صالح</string>
+    <string name="msg_symbol_already_used">هذا الرمز مستخدم بالفعل بواسطة نمط آخر</string>
+    
+    <!-- New Settings Dialog Strings -->
+    <string name="settings_option_choose_model">اختيار وإعداد النموذج</string>
+    <string name="dialog_title_commands_list">قائمة الأوامر</string>
+    <string name="settings_option_patterns_list">قائمة الأنماط</string>
+    <string name="dialog_title_config_model">إعداد %1$s</string>
+    
+    <!-- Other Settings -->
+    <string name="setting_enable_logging">تفعيل السجلات</string>
+    <string name="setting_desc_enable_logging">عطل هذا الخيار لتحسين الأداء. لن تتمكن من الإبلاغ عن الأخطاء.</string>
+    <string name="setting_external_internet">استخدام خدمة إنترنت خارجية</string>
+    <string name="setting_desc_external_internet">يُنصح بتفعيله ما لم يكن إكمال المحادثة لا يعمل.</string>
+    <string name="setting_search_engine">محرك البحث</string>
+    <string name="setting_desc_search_engine">محرك البحث الافتراضي لعمليات البحث.</string>
+    <string name="setting_material_you">تفعيل Material You</string>
+    <string name="setting_desc_material_you">استخدام الألوان الديناميكية بناءً على الخلفية أو لون مخصص.</string>
+    <string name="setting_wallpaper_colors">استخدام ألوان الخلفية</string>
+    <string name="setting_desc_wallpaper_colors">استخراج الألوان من خلفية الجهاز (أندرويد 12+).</string>
+    <string name="setting_seed_color">لون البذرة</string>
+    <string name="setting_desc_seed_color">لون مخصص لتوليد السمة.</string>
+    <string name="setting_single_tone">استخدام درجة لون واحدة</string>
+    <string name="setting_desc_single_tone">استخدام درجة لون واحدة للسمة.</string>
+    <string name="setting_check_updates">التحقق من التحديثات</string>
+    <string name="setting_desc_check_updates">التحقق تلقائياً من الإصدارات الجديدة.</string>
+    <string name="setting_update_interval">فترة التحقق من التحديثات</string>
+    <string name="setting_desc_update_interval">كم مرة يتم التحقق من التحديثات (بالساعات).</string>
+    <string name="setting_download_path">مسار التنزيل</string>
+    <string name="setting_desc_download_path">مسار مخصص لتنزيل التحديثات.</string>
+    
+    <!-- Pattern List & Edit -->
+    <string name="dialog_title_trigger_symbols">رموز التفعيل</string>
+    <string name="no_patterns">لا توجد أنماط</string>
+    <string name="dialog_title_edit_pattern">تعديل %1$s</string>
+    <string name="example_opens_settings">\u0022%1$s\u0022 \u2192 يفتح الإعدادات</string>
+    <string name="example_ai_responds">\u0022مرحباً، كيف حالك؟%1$s\u0022 \u2192 يرد الذكاء الاصطناعي</string>
+    <string name="example_translates">\u0022مرحباً%1$sترجم%1$s\u0022 \u2192 يترجم</string>
+    <string name="example_format_italic">\u0022نص%1$s\u0022 \u2192 نص مائل</string>
+    <string name="example_format_bold">\u0022نص%1$s\u0022 \u2192 نص عريض</string>
+    <string name="example_format_crossout">\u0022نص%1$s\u0022 \u2192 يتوسطه خط</string>
+    <string name="example_format_underline">\u0022نص%1$s\u0022 \u2192 تحته خط</string>
+    <string name="example_default">اكتب النص، ثم أضف \u0022%1$s\u0022 في النهاية</string>
+    <string name="pattern_subtitle_trigger">المشغل: %1$s</string>
+    
+    <!-- PatternType Titles -->
+    <string name="title_settings_trigger">الإعدادات</string>
+    <string name="title_ai_trigger">مشغل AI</string>
+    <string name="title_custom_command">أمر مخصص</string>
+    <string name="title_italic">مائل</string>
+    <string name="title_bold">عريض</string>
+    <string name="title_crossout">مشطوب</string>
+    <string name="title_underline">تحته خط</string>
+    <string name="title_web_search">بحث الويب</string>
+    <string name="btn_reset_pattern">إعادة تعيين النمط</string>
+    <string name="msg_reset_pattern_confirm">إعادة تعيين \'%1$s\' إلى الرمز الافتراضي \"%2$s\"؟</string>
+    <string name="msg_pattern_reset">تم إعادة تعيين النمط إلى الوضع الافتراضي</string>
+
+    <!-- Model Config Fields -->
+    <string name="field_api_key">مفتاح API</string>
+    <string name="field_top_p">Top P</string>
+    <string name="dialog_title_unknown_model">اسم نموذج غير معروف</string>
+    <string name="dialog_msg_unknown_model">النموذج "%1$s" غير موجود في قائمتنا المعتمدة.\nقد يكون جديداً أو غير صحيح.\n\nهل تقصد: %2$s؟</string>
+    <string name="btn_use_suggestion">استخدام المقترح</string>
+    <string name="btn_use_anyway">استخدام على أي حال</string>
+    
+    <!-- Missing Model Config Fields -->
+    <string name="field_sub_model">النموذج الفرعي</string>
+    <string name="field_base_url">رابط القاعدة</string>
+    <string name="field_max_tokens">الحد الأقصى للرموز</string>
+    <string name="field_temperature">درجة الإبداع</string>
+    
+    <!-- Missing Update Interval -->
+    <string name="interval_every_disabled">معطل</string>
+
+    <string name="msg_ai_no_response_error">لم يتم استلام أي رد. أعاد الذكاء الاصطناعي محتوى فارغًا.\nتلميح: ربما تستخدم تريجر/أمر غير مسجل.</string>
+</resources>
