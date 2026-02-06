@@ -1,132 +1,209 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 chcp 65001 >nul
-title KGPT 最终修正版 (7897 优先模式)
+title GitHub 万能发布工具 (防闪退最终版)
+color 0A
 
-:: ==========================================
-:: 核心修正：强制锁定“当下目录”
-:: ==========================================
+:: ========================================================
+:: 0. 自动排除脚本自身
+:: ========================================================
 cd /d "%~dp0"
-echo [1/4] 已锁定当前工作目录：
-echo %cd%
+if not exist .gitignore type nul > .gitignore
+findstr /C:"万能发布工具.bat" .gitignore >nul
+if errorlevel 1 echo 万能发布工具.bat>> .gitignore
 
-:: 再次检查防呆
-if not exist "gradlew" (
-    echo.
-    echo [错误] 脚本没放对位置！
-    echo 请务必把此脚本放在和 gradlew, app 同一级的文件夹里！
-    pause
-    exit
-)
-
-:: ==========================================
-:: 步骤 2：生成一定会成功的编译配置
-:: ==========================================
+:: ========================================================
+:: 1. 仓库选择菜单 (您之前的要求)
+:: ========================================================
+:repo_menu
+cls
+echo ========================================================
+echo               第一步：选择目标仓库
+echo ========================================================
 echo.
-echo [2/4] 正在生成“通吃型”编译配置...
+echo  [1] PasteBar (电脑版)
+echo      地址: https://github.com/3030606794/-.git
+echo.
+echo  [2] KGPT (安卓版)
+echo      地址: https://github.com/3030606794/KGPT.git
+echo.
+echo  [3] 毒蛇
+echo      地址: https://github.com/3030606794/毒蛇.git
+echo.
+echo  [4] DDCToolbox-Build
+echo      地址: https://github.com/3030606794/DDCToolbox-Build.git
+echo.
+echo  [5] 手动粘贴新仓库地址...
+echo.
+echo ========================================================
+set /p repo_choice="请输入数字 (1-5): "
 
+if "%repo_choice%"=="1" set "repo_url=https://github.com/3030606794/-.git" && goto mode_menu
+if "%repo_choice%"=="2" set "repo_url=https://github.com/3030606794/KGPT.git" && goto mode_menu
+if "%repo_choice%"=="3" set "repo_url=https://github.com/3030606794/毒蛇.git" && goto mode_menu
+if "%repo_choice%"=="4" set "repo_url=https://github.com/3030606794/DDCToolbox-Build.git" && goto mode_menu
+if "%repo_choice%"=="5" goto manual_repo
+
+echo 输入错误，请重试。
+goto repo_menu
+
+:manual_repo
+echo.
+set /p repo_url="请粘贴仓库地址 (右键粘贴): "
+if "%repo_url%"=="" goto manual_repo
+goto mode_menu
+
+:: ========================================================
+:: 2. 项目类型 (生成配置 - 改为单行写入防闪退)
+:: ========================================================
+:mode_menu
+cls
+echo ========================================================
+echo               第二步：选择项目类型
+echo ========================================================
+echo.
+echo  [1] 电脑软件 (PC Windows)
+echo      - 目标: .exe / .msi
+echo.
+echo  [2] 安卓软件 (Android)
+echo      - 目标: .apk
+echo.
+echo ========================================================
+set /p mode="请输入数字 (1 或 2): "
+
+if "%mode%"=="1" goto pc_config
+if "%mode%"=="2" goto android_config
+goto mode_menu
+
+:: --- 电脑版配置 (PC) ---
+:pc_config
+echo.
+echo [1/3] 正在生成 Windows 配置 (防闪退模式)...
 if not exist ".github\workflows" mkdir ".github\workflows"
+del ".github\workflows\*.yml" 2>nul
 
-:: 写入配置：搜索所有 APK，不再指定文件名
-(
-echo name: Android Build
-echo.
-echo on:
-echo   push:
-echo     branches: [ "main" ]
-echo   workflow_dispatch:
-echo.
-echo jobs:
-echo   build:
-echo     runs-on: ubuntu-latest
-echo.
-echo     steps:
-echo     - uses: actions/checkout@v4
-echo.    
-echo     - name: Set up JDK 17
-echo       uses: actions/setup-java@v4
-echo       with:
-echo         java-version: '17'
-echo         distribution: 'temurin'
-echo         cache: gradle
-echo.
-echo     - name: Grant execute permission for gradlew
-echo       run: chmod +x gradlew
-echo.
-echo     - name: Build with Gradle
-echo       run: ./gradlew assembleDebug
-echo.
-echo     - name: Upload APK
-echo       uses: actions/upload-artifact@v4
-echo       with:
-echo         name: KGPT-Final-APK
-echo         path: "**/*.apk"
-) > ".github\workflows\android_build.yml"
+:: 单行写入，绝对安全
+echo name: Windows Build > ".github\workflows\windows_build.yml"
+echo on: >> ".github\workflows\windows_build.yml"
+echo   push: >> ".github\workflows\windows_build.yml"
+echo     branches: [ "main" ] >> ".github\workflows\windows_build.yml"
+echo jobs: >> ".github\workflows\windows_build.yml"
+echo   build-windows: >> ".github\workflows\windows_build.yml"
+echo     runs-on: windows-latest >> ".github\workflows\windows_build.yml"
+echo     steps: >> ".github\workflows\windows_build.yml"
+echo     - uses: actions/checkout@v4 >> ".github\workflows\windows_build.yml"
+echo     - name: Setup Node.js >> ".github\workflows\windows_build.yml"
+echo       uses: actions/setup-node@v4 >> ".github\workflows\windows_build.yml"
+echo       with: >> ".github\workflows\windows_build.yml"
+echo         node-version: 'lts/*' >> ".github\workflows\windows_build.yml"
+echo     - name: Install Rust >> ".github\workflows\windows_build.yml"
+echo       uses: dtolnay/rust-toolchain@stable >> ".github\workflows\windows_build.yml"
+echo     - name: Install dependencies >> ".github\workflows\windows_build.yml"
+echo       run: npm install >> ".github\workflows\windows_build.yml"
+echo     - name: Build App >> ".github\workflows\windows_build.yml"
+echo       run: npm run tauri build >> ".github\workflows\windows_build.yml"
+echo     - name: Upload Installer >> ".github\workflows\windows_build.yml"
+echo       uses: actions/upload-artifact@v4 >> ".github\workflows\windows_build.yml"
+echo       with: >> ".github\workflows\windows_build.yml"
+echo         name: PC-Windows-Installer >> ".github\workflows\windows_build.yml"
+echo         path: src-tauri/target/release/bundle/*/*.{exe,msi} >> ".github\workflows\windows_build.yml"
 
-echo 配置已修复。
+goto upload_start
 
-:: ==========================================
-:: 步骤 3：Git 提交 (扫描当下目录所有文件)
-:: ==========================================
+:: --- 安卓版配置 (Android) ---
+:android_config
 echo.
-echo [3/4] 正在扫描并提交当下目录所有文件...
+echo [1/3] 正在生成 Android 配置 (防闪退模式)...
+if not exist ".github\workflows" mkdir ".github\workflows"
+del ".github\workflows\*.yml" 2>nul
 
+echo name: Android Build > ".github\workflows\android_build.yml"
+echo on: >> ".github\workflows\android_build.yml"
+echo   push: >> ".github\workflows\android_build.yml"
+echo     branches: [ "main" ] >> ".github\workflows\android_build.yml"
+echo jobs: >> ".github\workflows\android_build.yml"
+echo   build-android: >> ".github\workflows\android_build.yml"
+echo     runs-on: ubuntu-latest >> ".github\workflows\android_build.yml"
+echo     steps: >> ".github\workflows\android_build.yml"
+echo     - uses: actions/checkout@v4 >> ".github\workflows\android_build.yml"
+echo     - name: Set up JDK 17 >> ".github\workflows\android_build.yml"
+echo       uses: actions/setup-java@v4 >> ".github\workflows\android_build.yml"
+echo       with: >> ".github\workflows\android_build.yml"
+echo         java-version: '17' >> ".github\workflows\android_build.yml"
+echo         distribution: 'temurin' >> ".github\workflows\android_build.yml"
+echo     - name: Grant execute permission for gradlew >> ".github\workflows\android_build.yml"
+echo       run: chmod +x gradlew >> ".github\workflows\android_build.yml"
+echo     - name: Build with Gradle >> ".github\workflows\android_build.yml"
+echo       run: ./gradlew assembleDebug >> ".github\workflows\android_build.yml"
+echo     - name: Upload APK >> ".github\workflows\android_build.yml"
+echo       uses: actions/upload-artifact@v4 >> ".github\workflows\android_build.yml"
+echo       with: >> ".github\workflows\android_build.yml"
+echo         name: Android-APK-Installer >> ".github\workflows\android_build.yml"
+echo         path: "**/*.apk" >> ".github\workflows\android_build.yml"
+
+goto upload_start
+
+:: ========================================================
+:: 3. 核心上传逻辑
+:: ========================================================
+:upload_start
+echo.
+echo [2/3] 正在打包所有文件 (包括子文件夹)...
 if not exist .git git init
 git remote remove origin 2>nul
-git remote add origin https://github.com/3030606794/KGPT.git
+git remote add origin %repo_url%
 
-:: 先清除所有代理设置，防止之前的残留
 git config --global --unset http.proxy 2>nul
 git config --global --unset https.proxy 2>nul
-git config --unset http.proxy 2>nul
-git config --unset https.proxy 2>nul
 
-git add .
-git commit -m "Final Fix: Direct Port 7897" 2>nul
+:: 暴力添加所有内容
+git add --all
+git commit -m "Auto Upload Source Code" 2>nul
 git branch -M main
 
-:: ==========================================
-:: 步骤 4：上传 (优先使用 Clash Verge 7897)
-:: ==========================================
 echo.
-echo [4/4] 正在推送到 GitHub...
+echo [3/3] 正在推送到 GitHub...
+echo 目标: %repo_url%
 
-:: 第一次尝试：直接强制指定 Clash Verge 端口 7897
-echo [尝试 1] 正在通过代理端口 7897 上传...
+:: 端口轮询
+echo [尝试] 端口 7897...
 git config http.proxy http://127.0.0.1:7897
 git config https.proxy http://127.0.0.1:7897
 git push -u origin main --force
 if not errorlevel 1 goto success
 
-:: 第二次尝试：如果 7897 失败，尝试旧版端口 7890
-echo.
-echo [警告] 端口 7897 失败，尝试旧版端口 7890...
+echo [尝试] 端口 7890...
 git config http.proxy http://127.0.0.1:7890
 git config https.proxy http://127.0.0.1:7890
 git push -u origin main --force
 if not errorlevel 1 goto success
 
-:: 第三次尝试：最后尝试直连（作为保底）
-echo.
-echo [警告] 代理均失败，尝试取消代理直连...
+echo [尝试] 直连...
 git config --unset http.proxy
 git config --unset https.proxy
 git push -u origin main --force
 if not errorlevel 1 goto success
 
+color 0C
 echo.
-echo [严重错误] 所有通道均无法连接 GitHub。
-echo 请检查你的 Clash 是否开启，且端口确实是 7897。
+echo [失败] 无法上传。请检查网络。
 pause
 exit
 
+:: ========================================================
+:: 4. 成功倒计时
+:: ========================================================
 :success
+color 0A
+cls
+echo ========================================================
+echo               🎉 任务圆满完成！
+echo ========================================================
 echo.
-echo ==========================================
-echo  🎉 成功！搞定了！
-echo ==========================================
-echo 1. 去 GitHub 点击 "Actions"
-echo 2. 等那个转圈的任务变成绿色
-echo 3. 点进去下载 "KGPT-Final-APK"
-echo ==========================================
-pause
+echo  1. 已上传至: %repo_url%
+echo  2. 编译已开始，稍后请去 GitHub 下载。
+echo.
+echo  窗口将在 10 秒后自动关闭...
+echo ========================================================
+timeout /t 10
+exit
