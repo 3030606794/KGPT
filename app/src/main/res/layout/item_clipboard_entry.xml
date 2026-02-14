@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_item_ripple"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="14dp"
+    android:paddingHorizontal="8dp">
+
+    <!-- Multi-select checkbox (AI clipboard selection mode) -->
+    <CheckBox
+        android:id="@+id/cb_selected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:button="@drawable/checkbox_square"
+        android:buttonTint="@null"
+        android:background="@null"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/icon_move_container"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_option_icon">
+
+        <ImageView
+            android:id="@+id/iv_move"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_folder_open_filled" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/icon_container"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_option_icon">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_star" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp" />
+
+        <!-- Secondary row: time/status on the left, and clipboard text length on the right (clipboard screen only). -->
+        <LinearLayout
+            android:id="@+id/row_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_model_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_clip_char_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text=""
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_action_expand"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_expand_more"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_action_delete"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_delete"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="6dp"
+        android:src="@drawable/ic_edit"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone" />
+
+    <!-- NOTE: selection checkbox moved to the left for better UX -->
+
+</LinearLayout>

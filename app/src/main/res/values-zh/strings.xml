@@ -1,0 +1,1960 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    
+    
+    <string name="app_name">KGPT</string>
+    
+    
+    <string name="nav_home">首页</string>
+    
+    
+    <string name="nav_models">模型</string>
+    
+    
+    <string name="nav_api_keys">API 密钥</string>
+    
+    
+    <string name="nav_settings">设置</string>
+    
+    
+    <string name="module_active">模块已激活</string>
+    
+    
+    <string name="module_inactive">模块未激活</string>
+    
+    
+    <string name="module_active_desc">KGPT 正在运行</string>
+    
+    
+    <string name="module_inactive_desc">请在 LSPosed 管理器中启用</string>
+    
+    
+    <string name="quick_actions">快速操作</string>
+    
+    
+    <string name="current_model">当前模型</string>
+    
+    
+    <string name="ai_invocation">AI 调用</string>
+    
+    
+    <string name="ai_invocation_desc">配置命令和触发器</string>
+    
+    
+    <string name="how_to_use">使用说明</string>
+    
+    
+    <string name="how_to_use_desc">了解如何使用 KGPT</string>
+    
+    
+    <string name="ai_models">AI 模型</string>
+    
+    
+    <string name="select_model">选择你喜欢的模型</string>
+    
+    
+    <string name="model_config">模型配置</string>
+    
+    
+    <string name="sub_model">子模型</string>
+    
+    
+    <string name="base_url">基础 URL</string>
+    
+    
+    <string name="advanced_settings">高级设置</string>
+    
+    
+    <string name="max_tokens">最大 Tokens</string>
+    
+    
+    <string name="temperature">温度 (Temperature)</string>
+    
+    
+    <string name="save_config">保存配置</string>
+    
+    
+    <string name="api_keys">API 密钥</string>
+    
+    
+    <string name="manage_api_keys">管理 API 密钥</string>
+    
+    
+    <string name="enter_api_key">输入 API 密钥</string>
+    
+    
+    <string name="save">保存</string>
+    
+    
+    <string name="api_key_info">密钥将安全地存储在您的设备上。</string>
+    
+    
+    <string name="settings">设置</string>
+    
+    
+    <string name="appearance">外观</string>
+    
+    
+    <string name="dark_mode">深色模式</string>
+    
+    
+    <string name="follow_system">跟随系统</string>
+    
+    
+    <string name="amoled_dark">AMOLED 纯黑</string>
+    
+    
+    <string name="amoled_desc">OLED 屏幕纯黑模式</string>
+    
+    
+    <string name="blur_control">模糊控制</string>
+    
+    
+    <string name="blur_control_desc">管理背景模糊效果</string>
+    
+    
+    <string name="blur_enabled">启用模糊</string>
+    
+    
+    <string name="blur_enabled_desc">悬浮窗背景模糊效果</string>
+    
+    
+    <string name="blur_intensity">强度</string>
+    
+    
+    <string name="blur_tint_color">色调颜色</string>
+    
+    
+    <string name="color_saturation">饱和度</string>
+    
+    
+    <string name="general">常规</string>
+    
+    
+    <string name="enable_logging">启用日志</string>
+    
+    
+    <string name="logging_desc">禁用以提高性能</string>
+    
+    
+    <string name="external_internet">外部网络</string>
+    
+    
+    <string name="external_internet_desc">推荐开启以保持稳定</string>
+    
+    
+    <string name="backup_restore">备份与恢复</string>
+    
+    
+    <string name="export_backup">导出备份</string>
+    
+    
+    <string name="export_backup_desc">将设置保存到文件</string>
+    
+    
+    <string name="import_backup">导入备份</string>
+    
+    
+    <string name="import_backup_desc">从文件恢复设置</string>
+    
+    
+    <string name="about">关于</string>
+    
+    
+    <string name="config_saved">配置已保存</string>
+    
+    
+    <string name="api_key_saved">API 密钥已保存</string>
+    
+    
+    <string name="api_key_removed">API 密钥已移除</string>
+    
+    
+    <string name="backup_exported">导出成功</string>
+    
+    
+    <string name="backup_imported">导入成功</string>
+    
+    
+    <string name="export_failed">导出失败</string>
+    
+    
+    <string name="import_failed">导入失败</string>
+    
+    
+    <string name="themed_icon_title">主题图标</string>
+    
+    
+    <string name="themed_icon_desc">自适应图标 (Material You)</string>
+    
+    
+    <string name="about_home_title">关于首页</string>
+    
+    
+    <string name="about_home_description">欢迎使用 KGPT！\n\n\u2022 状态：显示 Xposed 模块是否激活。\n\n\u2022 模型：显示当前活动的 AI。\n\n\u2022 调用：配置触发器。\n\n\u2022 指南：使用技巧。</string>
+    
+    
+    <string name="built_in_indicator"> • 内置</string>
+    
+    
+    <string name="ask_command_description">保留您的文本并添加 AI 回复</string>
+    
+    
+    <string name="ask_command_example">例如：你好 /ask 它是谁？ \u2192 你好！它是...</string>
+    
+    
+    <string name="generating_content">&lt;生成中...&gt;</string>
+    
+    
+    <string name="choose_model_message">请先配置 AI 模型</string>
+    
+    
+    <string name="missing_api_key_message">缺少 %1$s 的 API 密钥</string>
+    
+    
+    <string name="unknown_error">未知错误</string>
+    
+    
+    <string name="error_format">[错误: %1$s]</string>
+    
+    
+    <string name="action_rephrase">改写</string>
+    
+    
+    <string name="action_fix_errors">纠错</string>
+    
+    
+    <string name="action_improve">润色</string>
+    
+    
+    <string name="action_expand">扩写</string>
+    
+    
+    <string name="action_shorten">总结</string>
+    
+    
+    <string name="action_formal">正式</string>
+    
+    
+    <string name="action_casual">休闲</string>
+    
+    
+    <string name="action_translate">翻译</string>
+    
+    
+    <string name="msg_copied">已复制</string>
+    
+    
+    <string name="msg_ai_error">AI 错误: %1$s</string>
+    
+    
+    <string name="msg_no_text_selected">未选择文本</string>
+    
+    
+    <string name="edit_prompt_title">编辑 %1$s 的提示词</string>
+    
+    
+    <string name="text_action_commands_title">可用命令：</string>
+    
+    
+    <string name="text_action_commands_example">例如："你好世界 $rephrase"</string>
+    
+    
+    <string name="missing_api_key_generic">缺少 API 密钥。</string>
+    
+    
+    <string name="action_add_custom">添加自定义操作</string>
+    
+    
+    <string name="label_custom_action">自定义操作</string>
+    
+    
+    <string name="error_missing_name_prompt">需要名称和提示词</string>
+    
+    
+    <string name="dialog_title_add_custom_action">新操作</string>
+    
+    
+    <string name="dialog_subtitle_add_custom_action">创建您的 AI 操作</string>
+    
+    
+    <string name="label_action_name">名称</string>
+    
+    
+    <string name="label_system_prompt">系统提示词</string>
+    
+    
+    <string name="helper_system_prompt">给 AI 的指令</string>
+    
+    
+    <string name="cancel">取消</string>
+    
+    
+    <string name="add">添加</string>
+    
+    
+    <string name="delete">删除</string>
+    
+    
+    <string name="reset">重置</string>
+    
+    
+    <string name="dialog_title_edit_custom_action">编辑操作</string>
+    
+    
+    <string name="dialog_subtitle_edit_custom_action">修改详情</string>
+    
+    
+    <string name="dialog_title_edit_prompt">编辑提示词</string>
+    
+    
+    <string name="dialog_subtitle_edit_prompt">自定义指令</string>
+    
+    
+    <string name="prompt_rephrase">你是一个改写助手。改写文本，保持原意。保持语言不变。仅输出改写后的文本。</string>
+    
+    
+    <string name="prompt_fix_errors">你是一个校对员。纠正语法和拼写错误。保持语言不变。仅输出纠正后的文本。</string>
+    
+    
+    <string name="prompt_improve">改进风格和清晰度。保持原意和语言。仅输出改进后的文本。</string>
+    
+    
+    <string name="prompt_expand">用细节扩写文本。保持语言不变。仅输出扩写后的文本。</string>
+    
+    
+    <string name="prompt_shorten">总结文本，保留要点。保持语言不变。仅输出总结。</string>
+    
+    
+    <string name="prompt_formal">使文本正式和专业。保持语言不变。仅输出正式文本。</string>
+    
+    
+    <string name="prompt_casual">使文本休闲和友好。保持语言不变。仅输出休闲文本。</string>
+    
+    
+    <string name="prompt_translate_auto">翻译成相反的语言（中文-&gt;英文，其他-&gt;英文）。仅输出翻译。</string>
+    
+    
+    <string name="prompt_translate_target">将文本翻译成 %1$s。仅输出翻译。</string>
+    
+    
+    <string name="prompt_default">处理这个：</string>
+    
+    
+    <string name="update_available">有可用更新</string>
+    
+    
+    <string name="update_available_desc">KGPT 新版本可用。</string>
+    
+    
+    <string name="update_available_title">更新！</string>
+    
+    
+    <string name="update_app_desc">版本 %1$s 可用。\n当前：v%2$s。</string>
+    
+    
+    <string name="no_changelog">无更新日志。</string>
+    
+    
+    <string name="downloading">下载中... %1$d%%</string>
+    
+    
+    <string name="starting_download">开始...</string>
+    
+    
+    <string name="download_title">下载</string>
+    
+    
+    <string name="download_complete">完成</string>
+    
+    
+    <string name="ready_to_install">准备安装！</string>
+    
+    
+    <string name="up_to_date_title">已是最新</string>
+    
+    
+    <string name="up_to_date_desc">您正在使用最新版本 (v%1$s)。</string>
+    
+    
+    <string name="check_failed">检查失败</string>
+    
+    
+    <string name="check_failed_desc">无法检查更新。\n\n%1$s</string>
+    
+    
+    <string name="no_internet">无网络</string>
+    
+    
+    <string name="no_internet_desc">检查更新需要网络连接。</string>
+    
+    
+    <string name="btn_download">下载</string>
+    
+    
+    <string name="btn_later">稍后</string>
+    
+    
+    <string name="btn_install">安装</string>
+    
+    
+    <string name="btn_try_again">重试</string>
+    
+    
+    <string name="btn_close">关闭</string>
+    
+    
+    <string name="btn_ok">确定</string>
+    
+    
+    <string name="btn_great">太棒了</string>
+    
+    
+    <string name="btn_got_it">知道了</string>
+    
+    
+    <string name="btn_save">保存</string>
+    
+    
+    <string name="btn_reset">重置</string>
+    
+    
+    <string name="btn_proceed">继续</string>
+    
+    
+    <string name="btn_restart_now">立即重启</string>
+    
+    
+    <string name="btn_save_color">保存颜色</string>
+    
+    
+    <string name="how_to_use_title">KGPT 使用方法</string>
+    
+    
+    <string name="quick_guide">快速指南</string>
+    
+    
+    <string name="guide_step_1">在 LSPosed 中激活</string>
+    
+    
+    <string name="guide_step_2">选择 AI 模型</string>
+    
+    
+    <string name="guide_step_3">输入 API 密钥</string>
+    
+    
+    <string name="guide_step_4">输入文本 + 符号 ($)</string>
+    
+    
+    <string name="guide_step_5">AI 立即回复</string>
+    
+    
+    <string name="example">示例</string>
+    
+    
+    <string name="guide_example_text">中国的首都是哪里？$</string>
+    
+    
+    <string name="backup_settings_title">备份设置</string>
+    
+    
+    <string name="restore_settings_title">恢复设置</string>
+    
+    
+    <string name="backup_settings_desc">备份内容</string>
+    
+    
+    <string name="restore_settings_desc">恢复内容</string>
+    
+    
+    <string name="action_backup">备份</string>
+    
+    
+    <string name="action_restore">恢复</string>
+    
+    
+    <string name="select_all">全选</string>
+    
+    
+    <string name="option_ai_commands">AI 命令</string>
+    
+    
+    <string name="option_ai_commands_desc">自定义命令</string>
+    
+    
+    <string name="option_trigger_patterns">触发模式</string>
+    
+    
+    <string name="option_trigger_patterns_desc">键盘触发器</string>
+    
+    
+    <string name="option_ai_model">AI 配置</string>
+    
+    
+    <string name="option_ai_model_desc">模型设置</string>
+    
+    
+    <string name="option_appearance">外观</string>
+    
+    
+    <string name="option_appearance_desc">主题和颜色</string>
+    
+    
+    <string name="option_blur">模糊</string>
+    
+    
+    <string name="option_blur_desc">模糊设置</string>
+    
+    
+    <string name="option_general">常规</string>
+    
+    
+    <string name="option_general_desc">日志和网络</string>
+    
+    
+    <string name="option_app_triggers">App 触发器</string>
+    
+    
+    <string name="option_app_triggers_desc">特定应用配置</string>
+    
+    
+    <string name="option_text_actions">文本操作</string>
+    
+    
+    <string name="option_text_actions_desc">悬浮菜单</string>
+    
+    
+    <string name="option_sensitive_data">敏感数据</string>
+    
+    
+    <string name="option_sensitive_data_desc">包含 API 密钥！请勿分享。</string>
+    
+    
+    <string name="backup_warning_title">安全警告</string>
+    
+    
+    <string name="backup_warning_keys">此备份包含 API 密钥。</string>
+    
+    
+    <string name="backup_warning_risk">分享可能会泄露您的密钥。\n开发者不承担责任。</string>
+    
+    
+    <string name="backup_warning_confirm">继续吗？</string>
+    
+    
+    <string name="backup_warning_hint">是</string>
+    
+    
+    <string name="info_title">信息</string>
+    
+    
+    <string name="info_chip">信息</string>
+    
+    
+    <string name="info_default_desc">功能详情。</string>
+    
+    
+    <string name="restart_required_title">需要重启</string>
+    
+    
+    <string name="restart_required_desc">重启应用以生效。</string>
+    
+    
+    <string name="delete_title">删除</string>
+    
+    
+    <string name="delete_message">确定要删除吗？</string>
+    
+    
+    <string name="item_name_placeholder">名称</string>
+    
+    
+    <string name="btn_cancel">取消</string>
+    
+    
+    <string name="web_search_title">网页搜索</string>
+    
+    
+    <string name="select_search_engine_title">搜索引擎</string>
+    
+    
+    <string name="select_search_engine_desc">选择您的搜索引擎</string>
+    
+    
+    <string name="logs_exported_title">日志已导出</string>
+    
+    
+    <string name="root_access_granted">Root 权限已授予</string>
+    
+    
+    <string name="logs_exported_desc">日志已保存：</string>
+    
+    
+    <string name="log_device_info">• 设备信息</string>
+    
+    
+    <string name="log_xposed">• Xposed/LSPosed</string>
+    
+    
+    <string name="log_kgpt">• KGPT</string>
+    
+    
+    <string name="log_boot">• 内核 (dmesg)</string>
+    
+    
+    <string name="log_system">• 系统 (logcat)</string>
+    
+    
+    <string name="log_crash">• 崩溃</string>
+    
+    
+    <string name="root_explanation">使用 Root 获取详细日志。</string>
+    
+    
+    <string name="btn_done">完成</string>
+    
+    
+    <string name="delete_action_title">删除操作</string>
+    
+    
+    <string name="delete_action_desc">删除此自定义操作？</string>
+    
+    
+    <string name="delete_trigger_title">删除触发器</string>
+    
+    
+    <string name="delete_trigger_desc">删除 App 触发器？</string>
+    
+    
+    <string name="action_delete">删除</string>
+    
+    
+    <string name="title_choose_color">选择颜色</string>
+    
+    
+    <string name="label_color_code">HEX 代码</string>
+    
+    
+    <string name="quick_guide_title">快速指南</string>
+    
+    
+    <string name="quick_guide_subtitle">文本 + 符号</string>
+    
+    
+    <string name="guide_ai_trigger_title">激活 AI</string>
+    
+    
+    <string name="guide_ai_trigger_example">这是什么？$</string>
+    
+    
+    <string name="guide_inline_ask_title">/ask (内联)</string>
+    
+    
+    <string name="guide_inline_ask_example">/ask 时间？$</string>
+    
+    
+    <string name="guide_commands_title">命令</string>
+    
+    
+    <string name="guide_commands_example">你好 /translate$</string>
+    
+    
+    <string name="guide_formatting_title">符号</string>
+    
+    
+    <string name="guide_formatting_example">$ @ #</string>
+    
+    
+    <string name="title_changelog">更新日志</string>
+    
+    
+    <string name="title_select_app">选择应用</string>
+    
+    
+    <string name="chip_all">全部</string>
+    
+    
+    <string name="chip_user">用户</string>
+    
+    
+    <string name="chip_system">系统</string>
+    
+    
+    <string name="hint_search_apps">搜索...</string>
+    
+    
+    <string name="msg_loading_apps">加载中...</string>
+    
+    
+    <string name="title_add_api_key">添加密钥</string>
+    
+    
+    <string name="desc_add_api_key">选择提供商。</string>
+    
+    
+    <string name="title_add_actions">添加操作</string>
+    
+    
+    <string name="desc_add_actions">选择操作</string>
+    
+    
+    <string name="title_logging_disabled">日志已禁用</string>
+    
+    
+    <string name="desc_logging_disabled">在设置中启用日志。</string>
+    
+    
+    <string name="btn_enable_logging">启用日志</string>
+    
+    
+    <string name="title_check_frequency">频率</string>
+    
+    
+    <string name="desc_check_frequency">检查更新频率？</string>
+    
+    
+    <string name="title_choose_model">选择模型</string>
+    
+    
+    <string name="label_select_provider_hint">选择提供商</string>
+    
+    
+    <string name="hint_select_provider">提供商</string>
+    
+    
+    <string name="placeholder_search_engine">引擎</string>
+    
+    
+    <string name="placeholder_model_name">Gemini</string>
+    
+    
+    <string name="placeholder_item_name">名称</string>
+    
+    
+    <string name="placeholder_changelog_desc">说明</string>
+    
+    
+    <string name="tag_add">新增</string>
+    
+    
+    <string name="configure_model_title">配置</string>
+    
+    
+    <string name="advanced_settings_title">高级</string>
+    
+    
+    <string name="edit_command_title">编辑命令</string>
+    
+    
+    <string name="hint_command_prefix">前缀</string>
+    
+    
+    <string name="hint_prompt">提示词</string>
+    
+    
+    <string name="title_edit_trigger_symbol">编辑符号</string>
+    
+    
+    <string name="desc_edit_trigger_symbol">更改触发符号</string>
+    
+    
+    <string name="label_enable_trigger">启用</string>
+    
+    
+    <string name="desc_enable_trigger">使用此符号</string>
+    
+    
+    <string name="hint_trigger_symbol">符号</string>
+    
+    
+    <string name="label_preview">预览</string>
+    
+    
+    <string name="hint_trigger_word">关键字</string>
+    
+    
+    <string name="helper_trigger_word">输入此词打开应用</string>
+    
+    
+    <string name="example_trigger_word">例如：\'chrome\'</string>
+    
+    
+    <string name="msg_no_items">无项目</string>
+    
+    
+    <string name="title_add_trigger_symbol">添加符号</string>
+    
+    
+    <string name="desc_add_trigger_symbol">1-3 个字符</string>
+    
+    
+    <string name="hint_trigger_example">例如：@@</string>
+    
+    
+    <string name="status_free">免费</string>
+    
+    
+    <string name="btn_save_key">保存</string>
+    
+    
+    <string name="btn_get_key">获取密钥</string>
+    
+    
+    <string name="placeholder_provider_chatgpt">ChatGPT</string>
+    
+    
+    <string name="placeholder_action_name">名称</string>
+    
+    
+    <string name="placeholder_description">描述</string>
+    
+    
+    <string name="placeholder_action">操作</string>
+    
+    
+    <string name="version_placeholder">v4.0.0</string>
+    
+    
+    <string name="tag_stable">稳定</string>
+    
+    
+    <string name="commands_patterns_desc">命令与模式</string>
+    
+    
+    <string name="section_information">信息</string>
+    
+    
+    <string name="sub_model_desc">预设或自定义</string>
+    
+    
+    <string name="hint_custom_model">自定义模型</string>
+    
+    
+    <string name="title_app_triggers">App 触发器</string>
+    
+    
+    <string name="lab_badge">实验室</string>
+    
+    
+    <string name="app_triggers_intro">输入名称打开应用</string>
+    
+    
+    <string name="btn_enable_app_triggers">启用触发器</string>
+    
+    
+    <string name="desc_enable_app_triggers">关键字 -&gt; 打开应用</string>
+    
+    
+    <string name="msg_no_triggers">无触发器。</string>
+    
+    
+    <string name="guide_triggers_usage">• 关键字打开应用\n• 点击编辑</string>
+    
+    
+    <string name="material_you_blur">Material You 模糊</string>
+    
+    
+    <string name="use_dynamic_app_colors">动态颜色</string>
+    
+    
+    <string name="reset_settings">重置</string>
+    
+    
+    <string name="performance_tip">性能</string>
+    
+    
+    <string name="performance_tip_desc">旧设备建议禁用。</string>
+    
+    
+    <string name="kgpt_lab">KGPT 实验室</string>
+    
+    
+    <string name="experimental_badge">实验性</string>
+    
+    
+    <string name="lab_warning">实验性功能。</string>
+    
+    
+    <string name="desc_open_apps">文本打开应用</string>
+    
+    
+    <string name="new_badge">新</string>
+    
+    
+    <string name="desc_text_actions">所选文本操作</string>
+    
+    
+    <string name="text_actions_intro">智能操作。选择文本。</string>
+    
+    
+    <string name="coming_soon">敬请期待...</string>
+    
+    
+    <string name="title_material_you">Material You</string>
+    
+    
+    <string name="desc_material_you">自定义颜色</string>
+    
+    
+    <string name="use_wallpaper_colors">壁纸颜色</string>
+    
+    
+    <string name="extract_wallpaper_colors">提取</string>
+    
+    
+    <string name="seed_color">种子颜色</string>
+    
+    
+    <string name="manual_color_select">手动</string>
+    
+    
+    <string name="enable_text_actions">启用操作</string>
+    
+    
+    <string name="title_show_labels">显示标签</string>
+    
+    
+    <string name="desc_show_labels">图标下方显示名称</string>
+    
+    
+    <string name="title_available_actions">可用</string>
+    
+    
+    <string name="action_tip_title">点击编辑</string>
+    
+    
+    <string name="action_tip_desc">选择时显示悬浮菜单</string>
+    
+    
+    <string name="msg_enable_text_actions">启用以使用</string>
+    
+    
+    <string name="desc_enable_text_actions_sub">悬浮菜单</string>
+    
+    
+    <string name="title_ai_text_actions">AI 操作</string>
+    
+    
+    <string name="new_update_badge">更新</string>
+    
+    
+    <string name="update_changelog_placeholder">改进...</string>
+    
+    
+    <string name="title_downloading_update">下载中</string>
+    
+    
+    <string name="msg_downloading">下载中...</string>
+    
+    
+    <string name="download_progress_placeholder">0 / 0</string>
+    
+    
+    <string name="action_cancel_download">取消</string>
+    
+    
+    <string name="action_download_update">下载</string>
+    
+    
+    <string name="action_remind_later">提醒</string>
+    
+    
+    <string name="action_install_update">安装</string>
+    
+    
+    <string name="title_status_placeholder">状态</string>
+    
+    
+    <string name="msg_status_placeholder">消息</string>
+    
+    
+    <string name="action_primary_placeholder">主要</string>
+    
+    
+    <string name="action_secondary_placeholder">次要</string>
+    
+    
+    <string name="title_update_settings">更新设置</string>
+    
+    
+    <string name="title_auto_updates">自动更新</string>
+    
+    
+    <string name="switch_auto_updates">自动</string>
+    
+    
+    <string name="desc_auto_updates">自动检查</string>
+    
+    
+    <string name="title_check_interval">间隔</string>
+    
+    
+    <string name="interval_24h">24 小时</string>
+    
+    
+    <string name="title_download_path">下载路径</string>
+    
+    
+    <string name="path_default_downloads">Downloads</string>
+    
+    
+    <string name="desc_app_tagline">键盘中的生成式 AI</string>
+    
+    
+    <string name="title_add_command">新命令</string>
+    
+    
+    <string name="desc_add_command">自定义 AI 命令</string>
+    
+    
+    <string name="hint_command_name">名称</string>
+    
+    
+    <string name="hint_system_message">系统消息 (可选)</string>
+    
+    
+    <string name="help_command_usage">用法：文本 /cmd + 符号</string>
+    
+    
+    <string name="title_edit_pattern">编辑模式</string>
+    
+    
+    <string name="desc_edit_pattern">自定义正则</string>
+    
+    
+    <string name="hint_regex_pattern">正则表达式 (Regex)</string>
+    
+    
+    <string name="help_regex_default">默认：$prompt$</string>
+    
+    
+    <string name="title_other_settings">其他</string>
+    
+    
+    <string name="enable_trigger">启用</string>
+    
+    
+    <string name="hint_description">描述</string>
+    
+    
+    <string name="reset_default">默认</string>
+    
+    
+    <string name="hint_example">示例</string>
+    
+    
+    <string name="winter_mode">冬季模式</string>
+    
+    
+    <string name="winter_mode_desc">下雪效果</string>
+    
+    
+    <string name="title_settings_backup">备份</string>
+    
+    
+    <string name="desc_settings_backup">保存数据</string>
+    
+    
+    <string name="title_settings_restore">恢复</string>
+    
+    
+    <string name="desc_settings_restore">加载数据</string>
+    
+    
+    <string name="support_group">支持群组</string>
+    
+    
+    <string name="title_export_logs">导出日志</string>
+    
+    
+    <string name="desc_export_logs">用于调试</string>
+    
+    
+    <string name="title_updates">更新</string>
+    
+    
+    <string name="desc_updates_config">检查更新</string>
+    
+    
+    <string name="open_in_browser">浏览器打开</string>
+    
+    
+    <string name="hint_enter_url">URL</string>
+    
+    
+    <string name="duckduckgo">DuckDuckGo</string>
+    
+    
+    <string name="cat_caught_title">喵！</string>
+    
+    
+    <string name="cat_caught_msg">你找到我了！\n在 GitHub 上给个星标吗？</string>
+    
+    
+    <string name="cat_action_star">给星标</string>
+    
+    
+    <string name="cat_action_later">稍后</string>
+    
+    
+    <string name="quick_example">示例</string>
+    
+    
+    <string name="example_pattern_usage">输入并添加符号</string>
+    
+    
+    <string name="active_triggers">活动</string>
+    
+    
+    <string name="action_placeholder">操作</string>
+    
+    
+    <string name="version_v4_1_0">v4.1.0</string>
+    
+    
+    <string name="api_keys_description">您的 API 密钥</string>
+    
+    
+    <string name="gemini_api_title">Gemini API</string>
+    
+    
+    <string name="free_api_badge">免费</string>
+    
+    
+    <string name="gemini_api_description">主密钥</string>
+    
+    
+    <string name="gemini_api_key_hint">您的密钥</string>
+    
+    
+    <string name="save_key">保存</string>
+    
+    
+    <string name="get_key">获取</string>
+    
+    
+    <string name="additional_keys_title">附加</string>
+    
+    
+    <string name="add_key_button">+ 密钥</string>
+    
+    
+    <string name="add_key_desc">其他提供商</string>
+    
+    
+    <string name="privacy_notice_title">隐私</string>
+    
+    
+    <string name="privacy_notice_desc">密钥本地存储。</string>
+    
+    
+    <string name="settings_appearance">外观</string>
+    
+    
+    <string name="material_you_title">AMOLED 纯黑</string>
+    
+    
+    <string name="material_you_desc">OLED 专用</string>
+    
+    
+    <string name="provider_title">外部提供商</string>
+    
+    
+    <string name="provider_desc">对话补全</string>
+    
+    
+    <string name="about_settings">关于</string>
+    
+    
+    <string name="changelog">更新日志</string>
+    
+    
+    <string name="action_settings">设置</string>
+    
+    
+    <string name="title_ai_settings">AI 设置</string>
+    
+    
+    <string name="desc_ai_settings">模型和 API</string>
+    
+    
+    <string name="current_version_label">当前</string>
+    
+    
+    <string name="step_1">1</string>
+    
+    
+    <string name="step_2">2</string>
+    
+    
+    <string name="step_3">3</string>
+    
+    
+    <string name="step_4">4</string>
+    
+    
+    <string name="step_5">5</string>
+    
+    
+    <string name="title_ai_invocation">调用</string>
+    
+    
+    <string name="desc_ai_invocation">AI 调用</string>
+    
+    
+    <string name="hash_symbol">#</string>
+    
+    
+    <string name="default_hex_code">FF5733</string>
+    
+    
+    <string name="duration_6s">6秒</string>
+    
+    
+    <string name="language">语言</string>
+    
+    
+    <string name="language_desc">应用语言</string>
+    
+    
+    <string name="select_language">选择语言</string>
+    
+    
+    
+    
+    <string name="about_settings_title">关于设置</string>
+    
+    
+    <string name="about_settings_desc">自定义KGPT。\n\n• 深色:深色主题。\n\n• AMOLED:OLED纯黑。\n\n• 日志:用于调试。\n\n• 外部:用于AI。</string>
+    
+    
+    <string name="logging_warning_title">启用日志?</string>
+    
+    
+    <string name="logging_warning_desc">日志已禁用。启用后可导出。</string>
+    
+    
+    <string name="btn_enable_logging_action">启用日志</string>
+    
+    
+    <string name="logging_enabled_toast">日志已启用。可以导出。</string>
+    
+    
+    <string name="export_success_title">导出成功</string>
+    
+    
+    <string name="export_success_desc">日志保存在:</string>
+    
+    
+    <string name="root_status_label">Root状态</string>
+    
+    
+    <string name="boot_logs_label">启动日志</string>
+    
+    
+    <string name="system_logs_label">系统日志</string>
+    
+    
+    <string name="crash_logs_label">崩溃日志</string>
+    
+    
+    <string name="app_logs_label">应用日志</string>
+    
+    
+    <string name="available">可用</string>
+    
+    
+    <string name="unavailable">不可用</string>
+    
+    
+    <string name="tab_commands">命令</string>
+    
+    
+    <string name="tab_triggers">触发器</string>
+    
+    
+    <string name="tab_model">模型</string>
+    
+    
+    <string name="tab_api_keys">API密钥</string>
+    
+    
+    <string name="dock_add_command">添加命令</string>
+    
+    
+    <string name="dock_how_to_use">使用说明</string>
+    
+    
+    <string name="dock_add_app_trigger">添加触发器</string>
+    
+    
+    <string name="pattern_settings">设置</string>
+    
+    
+    <string name="pattern_ai_trigger">AI触发器</string>
+    
+    
+    <string name="pattern_custom_command">自定义命令</string>
+    
+    
+    <string name="pattern_italic">斜体</string>
+    
+    
+    <string name="pattern_bold">粗体</string>
+    
+    
+    <string name="pattern_crossout">删除线</string>
+    
+    
+    <string name="pattern_underline">下划线</string>
+    
+    
+    <string name="pattern_web_search">网页搜索</string>
+    
+    
+    <string name="pattern_desc_settings">设置触发器</string>
+    
+    
+    <string name="pattern_desc_ai_trigger">输入文本后在末尾添加$</string>
+    
+    
+    <string name="pattern_desc_custom_command" formatted="false">输入文本后添加%命令%</string>
+    
+    
+    <string name="pattern_desc_italic">输入文本后添加|</string>
+    
+    
+    <string name="pattern_desc_bold">输入文本后添加@</string>
+    
+    
+    <string name="pattern_desc_crossout">输入文本后添加~</string>
+    
+    
+    <string name="pattern_desc_underline">输入文本后添加_</string>
+    
+    
+    <string name="pattern_desc_web_search">输入文本后添加??进行搜索</string>
+    
+    
+    <string name="status_disabled">已禁用</string>
+    
+    
+    <string name="interval_every_hour">每小时</string>
+    
+    
+    <string name="interval_every_6_hours">每6小时</string>
+    
+    
+    <string name="interval_every_12_hours">每12小时</string>
+    
+    
+    <string name="interval_every_day">每天</string>
+    
+    
+    <string name="interval_every_2_days">每2天</string>
+    
+    
+    <string name="interval_every_week">每周</string>
+    
+    
+    <string name="interval_disabled">已禁用</string>
+    
+    
+    <string name="interval_every_n_hours">每%d小时</string>
+    
+    
+    <string name="path_default_downloads_option">默认 (下载)</string>
+    
+    
+    <string name="path_choose_custom">选择文件夹</string>
+    
+    
+    <string name="path_internal_storage">内部存储</string>
+    
+    
+    <string name="check_for_updates">检查更新</string>
+    
+    
+    <string name="checking_updates">检查中...</string>
+    
+
+    
+    
+    <string name="tag_added">新增</string>
+    
+    
+    <string name="tag_improved">改进</string>
+    
+    
+    <string name="tag_fixed">修复</string>
+    
+    
+    <string name="changelog_1_0_0_item1">在网页搜索选项中添加了 Google AI Mode</string>
+    
+    
+    <string name="changelog_1_0_0_item2">添加了语言选择功能，支持所有可用语言</string>
+    
+    
+    <string name="changelog_1_0_0_item3">改进了屏幕布局以适应单手使用和较大的手指</string>
+    
+    
+    <string name="changelog_1_0_0_item4">修复了许多稳定性问题并改进了性能</string>
+    
+    
+    <string name="changelog_1_0_0_item5">测试并添加了对 FUTO 键盘的支持</string>
+    
+    
+    <string name="changelog_1_0_0_item6">修复了与 Chutes API 的连接问题</string>
+    
+    
+    <string name="changelog_1_0_0_item7">添加了新的 Perplexity 模型和 Perplexity API 支持</string>
+    
+    
+    <string name="changelog_1_0_0_item8">移除了使用命令时的 \"/\" 限制</string>
+    
+    
+    <string name="changelog_1_0_0_note">请耐心等待，因为已向开发者报告了更多问题，但由于这是一个人的项目，将分批更新解决。感谢您的理解。</string>
+    
+    
+    <string name="module_restart_required_desc">重启设备以激活模块</string>
+    
+
+    
+    <string name="new_command_title">新建命令</string>
+    
+    
+    <string name="error_prefix_empty">前缀不能为空</string>
+    
+    
+    <string name="error_message_empty">消息不能为空</string>
+    
+    
+    <string name="error_duplicate_command">已存在同名命令</string>
+    
+    
+    <string name="format_edit_pattern_title">编辑 %1$s</string>
+    
+    
+    <string name="error_symbol_empty">符号不能为空</string>
+    
+    
+    <string name="error_symbol_not_allowed">不允许使用此符号</string>
+    
+    
+    <string name="error_pattern_creation_failed">无法为此符号创建模式</string>
+    
+    
+    <string name="error_pattern_invalid">生成的模式无效</string>
+    
+    
+    <string name="error_pattern_duplicate">此符号已被另一个模式使用</string>
+    
+    
+    <string name="msg_trigger_enabled">触发器 "%1$s" 已启用</string>
+    
+    
+    <string name="msg_trigger_disabled">触发器 "%1$s" 已禁用</string>
+    
+    
+    <string name="example_preview_settings">"%1$s" ← 打开设置</string>
+    
+    
+    <string name="example_preview_ai">"你好%1$s" ← AI 回复</string>
+    
+    
+    <string name="example_preview_custom">"你好%1$s翻译%1$s" ← 翻译</string>
+    
+    
+    <string name="example_preview_italic">"文本%1$s" ← 斜体</string>
+    
+    
+    <string name="example_preview_bold">"文本%1$s" ← 粗体</string>
+    
+    
+    <string name="example_preview_crossout">"文本%1$s" ← 删除线</string>
+    
+    
+    <string name="example_preview_underline">"文本%1$s" ← 下划线</string>
+    
+    
+    <string name="example_preview_default">输入文本，然后在末尾添加 "%1$s"</string>
+    
+    
+    <string name="msg_theme_updated">主题已更新</string>
+    
+    
+    <string name="msg_settings_restored">设置已恢复</string>
+    
+    
+    <string name="msg_requesting_root">正在请求 Root 权限...</string>
+    
+    
+    <string name="msg_root_denied">Root 权限被拒绝 - 某些日志可能会受到限制</string>
+    
+    
+    <string name="msg_exporting_logs">正在导出日志...</string>
+    
+    
+    <string name="msg_export_failed_prefix">导出日志失败：</string>
+    
+    
+    <string name="msg_backup_save_failed">保存备份失败</string>
+    
+    
+    <string name="msg_backup_create_error_prefix">创建备份时出错：</string>
+    
+    
+    <string name="msg_backup_read_failed">读取备份文件失败</string>
+    
+    
+    <string name="msg_no_restore_data">备份中未找到可恢复的数据</string>
+    
+    
+    <string name="msg_restore_failed_prefix">恢复失败：</string>
+    
+    
+    <string name="msg_select_model_toast">请选择一个模型</string>
+    
+    
+    <string name="msg_settings_not_available">设置不可用</string>
+    
+    
+    <string name="msg_config_saved_with">配置已保存（使用 </string>
+    
+    
+    <string name="msg_config_saved_warning">已保存（模型可能无法工作）</string>
+    
+    
+    <string name="msg_config_saved">配置已保存</string>
+    
+    
+    <string name="msg_symbol_empty">符号不能为空</string>
+
+    <string name="msg_symbol_too_long">符号太长（最多 32 个字符）</string>
+    
+    
+    <string name="msg_symbol_not_allowed">不允许使用此符号</string>
+    
+    
+    <string name="msg_pattern_create_failed">无法创建模式</string>
+    
+    
+    <string name="msg_pattern_invalid">无效模式</string>
+    
+    
+    <string name="msg_trigger_status_format">触发器 "%1$s" %2$s</string>
+    
+    
+    <string name="msg_command_name_required">必须填写命令名称</string>
+    
+    
+    <string name="msg_command_exists">命令已存在</string>
+    
+    
+    <string name="msg_command_builtin_conflict">无法使用内置命令名称</string>
+    
+    
+    <string name="msg_command_added">命令已添加</string>
+    
+    
+    <string name="msg_command_updated">命令已更新</string>
+    
+    
+    <string name="msg_inline_ask_updated">内联提问命令已更新</string>
+    
+    
+    <string name="msg_command_deleted">命令已删除</string>
+    
+    
+    <string name="msg_open_url_failed">无法打开 URL</string>
+    
+    
+    <string name="msg_enter_api_key">请输入 API 密钥</string>
+    
+    
+    <string name="msg_gemini_key_saved">Gemini API 密钥已保存</string>
+    
+    
+    <string name="msg_all_providers_added">所有提供商均已添加</string>
+    
+    
+    <string name="msg_enter_trigger">请输入触发器</string>
+    
+    
+    <string name="msg_cat_caught_toast">喵！你抓到我了！🐱</string>
+    
+    
+    <string name="msg_pattern_create_symbol_failed">无法为此符号创建模式</string>
+    
+    
+    <string name="msg_pattern_generated_invalid">生成的模式无效</string>
+    
+    
+    <string name="msg_symbol_already_used">此符号已被使用</string>
+    
+    
+    
+    
+    <string name="settings_option_choose_model">选择并配置模型</string>
+    
+    
+    <string name="dialog_title_commands_list">命令列表</string>
+    
+    
+    <string name="settings_option_patterns_list">模式列表</string>
+    
+    
+    <string name="dialog_title_config_model">配置 %1$s</string>
+    
+    
+    <string name="setting_enable_logging">启用日志</string>
+    
+    
+    <string name="setting_desc_enable_logging">禁用以提高性能。您将无法报告错误。</string>
+    
+    
+    <string name="setting_external_internet">使用外部网络服务</string>
+    
+    
+    <string name="setting_desc_external_internet">建议启用，除非聊天功能不正常。</string>
+    
+    
+    <string name="setting_search_engine">搜索引擎</string>
+    
+    
+    <string name="setting_desc_search_engine">默认搜索引擎。</string>
+    
+    
+    <string name="setting_material_you">启用 Material You</string>
+    
+    
+    <string name="setting_desc_material_you">基于壁纸的动态颜色。</string>
+    
+    
+    <string name="setting_wallpaper_colors">使用壁纸颜色</string>
+    
+    
+    <string name="setting_desc_wallpaper_colors">从壁纸提取颜色（Android 12+）。</string>
+    
+    
+    <string name="setting_seed_color">基础颜色</string>
+    
+    
+    <string name="setting_desc_seed_color">主题的自定义颜色。</string>
+    
+    
+    <string name="setting_single_tone">使用单色调</string>
+    
+    
+    <string name="setting_desc_single_tone">主题使用单一色调。</string>
+    
+    
+    <string name="setting_check_updates">检查更新</string>
+    
+    
+    <string name="setting_desc_check_updates">自动检查新版本。</string>
+    
+    
+    <string name="setting_update_interval">检查间隔</string>
+    
+    
+    <string name="setting_desc_update_interval">检查更新的频率（小时）。</string>
+    
+    
+    <string name="setting_download_path">下载路径</string>
+    
+    
+    <string name="setting_desc_download_path">自定义下载路径。</string>
+    
+    
+    <string name="dialog_title_trigger_symbols">触发符号</string>
+    
+    
+    <string name="no_patterns">无模式</string>
+    
+    
+    <string name="dialog_title_edit_pattern">编辑 %1$s</string>
+    
+    
+    <string name="example_opens_settings">\u0022%1$s\u0022 \u2192 打开设置</string>
+    
+    
+    <string name="example_ai_responds">\u0022你好，你怎么样？%1$s\u0022 \u2192 AI回复</string>
+    
+    
+    <string name="example_translates">\u0022你好%1$s翻译%1$s\u0022 \u2192 翻译</string>
+    
+    
+    <string name="example_format_italic">\u0022文本%1$s\u0022 \u2192 斜体文本</string>
+    
+    
+    <string name="example_format_bold">\u0022文本%1$s\u0022 \u2192 粗体文本</string>
+    
+    
+    <string name="example_format_crossout">\u0022文本%1$s\u0022 \u2192 删除线</string>
+    
+    
+    <string name="example_format_underline">\u0022文本%1$s\u0022 \u2192 下划线</string>
+    
+    
+    <string name="example_default">输入文本，然后在末尾添加 \u0022%1$s\u0022</string>
+    
+    
+    <string name="pattern_subtitle_trigger">触发器: %1$s</string>
+    
+    
+    <string name="title_settings_trigger">设置</string>
+    
+    
+    <string name="title_ai_trigger">AI触发器</string>
+    
+    
+    <string name="title_custom_command">自定义命令</string>
+    
+    
+    <string name="title_italic">斜体</string>
+    
+    
+    <string name="title_bold">粗体</string>
+    
+    
+    <string name="title_crossout">删除线</string>
+    
+    
+    <string name="title_underline">下划线</string>
+    
+    
+    <string name="title_web_search">网页搜索</string>
+    
+    
+    <string name="btn_reset_pattern">重置模式</string>
+    
+    
+    <string name="msg_reset_pattern_confirm">将 \'%1$s\' 重置为默认符号 \"%2$s\"？</string>
+    
+    
+    <string name="msg_pattern_reset">模式已重置为默认</string>
+    
+    
+    <string name="field_api_key">API密钥</string>
+    
+    
+    <string name="field_sub_model">子模型</string>
+    
+    
+    <string name="field_base_url">基础URL</string>
+    
+    
+    <string name="field_max_tokens">最大令牌数</string>
+    
+    
+    <string name="field_temperature">温度</string>
+    
+    
+    <string name="field_top_p">Top P</string>
+    
+    
+    <string name="no_commands">无命令</string>
+    
+
+
+    
+    
+    <string name="interval_every_disabled">Disabled</string>
+    
+    
+    <string name="hint_search_language">Search languages...</string>
+    
+    
+    <string name="btn_use_suggestion">Use Suggestion</string>
+    
+    
+    <string name="dialog_title_unknown_model">Unknown Model Name</string>
+    
+    
+    <string name="btn_use_anyway">Use Anyway</string>
+    
+    
+    <string name="dialog_msg_unknown_model">The model "%1$s" is not in our verified list.\nIt might be new or incorrect.\n\nDid you mean: %2$s?</string>
+    
+    
+    <string name="changelog_4_0_8_item1">修复了切换语言并进入AI调用部分时的崩溃问题</string>
+    
+    
+    <string name="changelog_4_0_8_item2">改进了更新日志中警报卡片的设计</string>
+    
+    
+    <string name="changelog_4_0_8_item3">添加了对ZhipuAI提供的GLM模型的支持</string>
+    
+    
+    <string name="changelog_4_0_8_item4">修复了使用文本格式化命令时缺少空格的问题</string>
+    
+    
+    <string name="changelog_4_0_8_item5">修复了使用未注册的触发器或 AI 无响应时文本消失的问题</string>
+    
+    
+    <string name="changelog_note_4_0_8">请耐心等待，因为已向开发人员报告了更多问题，但由于这是一个单人项目，这些问题将在批量更新中得到解决。 感谢您的理解。</string>
+    
+    
+    <string name="msg_ai_no_response_error">未收到响应。AI 返回了空内容。\n提示：您可能使用的是未注册的触发器/命令。</string>
+    
+
+    <string name="ui_manage_roles">角色管理</string>
+    <string name="ui_manage_models">模型管理</string>
+    <string name="ui_manage_keys">密钥管理</string>
+    <string name="ui_choose_key">选择密钥</string>
+    <string name="no_roles_found">未找到角色</string>
+    <string name="no_saved_keys">没有已保存的密钥</string>
+    <string name="key_not_set_toast">%1$s 未设置密钥</string>
+    <string name="provider_switched_toast">已切换到：%1$s</string>
+
+    <string name="ui_model_role_key">ChatGPT 助手</string>
+    <string name="ui_save_update">保存更新</string>
+    <string name="ui_roles_summary">共 %1$d 个角色 · 当前第 %2$d 个：%3$s</string>
+    <string name="ui_models_summary">共 %1$d 个模型 · 当前第 %2$d 个：%3$s</string>
+    <string name="ui_keys_summary">共 %1$d 个密钥 · 当前第 %2$d 个：%3$s</string>
+    <string name="ui_pending_not_saved">已选择：%1$s（未保存）</string>
+
+    <string name="ui_locate">定位到当前选择</string>
+
+    <string name="ui_update_models_title">更新模型？</string>
+    <string name="ui_update_models_msg">已切换到 %1$s。是否现在更新模型列表？</string>
+    <string name="ui_update_models_yes">更新</string>
+    <string name="ui_update_models_no">暂不</string>
+
+    <string name="ui_enter_proxy_title">中转/代理地址</string>
+    <string name="ui_enter_proxy_msg">请输入中转/代理服务器地址（Base URL）。留空将使用默认地址。</string>
+
+    <string name="ui_fetching_models">正在获取模型…</string>
+    <string name="ui_models_cached_toast">已缓存 %1$d 个模型</string>
+    <string name="fetch_models_claude_not_supported">Claude 不支持自动获取模型列表</string>
+
+    
+    <string name="ui_ai_settings">AI 设置</string>
+    <string name="ui_ai_settings_desc">选择 AI 提供商（自动切换对应密钥），再选择模型。</string>
+    <string name="ui_key_status_set">密钥：已设置</string>
+    <string name="ui_key_status_missing">密钥：未设置</string>
+
+    <string name="ui_ai_triggers">AI触发器</string>
+    <string name="ui_ai_commands_desc">共 %1$d 个命令</string>
+    <string name="ui_ai_commands_desc_status">共 %1$d 个命令 · 已启用：%2$d · 已禁用：%3$d</string>
+    <string name="ui_ai_triggers_desc">共 %1$d 个触发器 · 吃换行：%2$s</string>
+    <string name="ui_ai_triggers_desc_status">共 %1$d 个触发器 · 吃换行：%2$s · 已启用：%3$d · 已禁用：%4$d</string>
+    <string name="ui_ai_trigger_multiline">吃换行（多行发送）</string>
+    <string name="ui_multiline_on">已开启：发送全部内容</string>
+    <string name="ui_multiline_off">已关闭：只发送最后一行</string>
+    <string name="ui_on">开</string>
+    <string name="ui_off">关</string>
+    <string name="ui_add_role">添加角色</string>
+    <string name="ui_edit_role">编辑角色</string>
+    <string name="ui_edit">编辑</string>
+    <string name="ui_fields_required">请填写完整</string>
+    <string name="ui_choose_provider">选择提供商</string>
+    <string name="ui_add_key_for">为 %1$s 添加密钥</string>
+    <string name="ui_key_saved">密钥已保存：%1$s</string>
+    <string name="ui_count_simple">共 %1$d 个</string>
+    <string name="no_commands_found">暂无 AI 命令</string>
+    <string name="no_patterns_found">暂无 AI 触发器</string>
+    <string name="ui_disabled">已禁用</string>
+    <string name="ui_trigger_symbol_fmt">触发符号："%1$s"</string>
+    <string name="ui_command_no_desc">无描述</string>
+    <string name="ui_proxy_baseurl_hint">中转/代理 BaseURL</string>
+
+<string name="ok">确定</string>    <string name="ui_rename_group">重命名分组</string>
+    <string name="ui_group_manage_hint">点击右侧笔可重命名，拖动右侧可排序，垃圾桶删除</string>
+
+    <string name="ui_delete_group">删除分组</string>
+    <string name="msg_delete_group_confirm">确定删除分组“%1$s”吗？该分组内的剪贴板条目将移动到“全部”。</string>
+    <string name="msg_group_deleted">已删除分组：%1$s</string>
+    <string name="msg_group_renamed">分组已重命名为：%1$s</string>
+    <string name="ui_no_matching_models">无匹配模型</string>
+    <string name="search_models">搜索模型…</string>
+    <string name="ui_manage_your_ai_commands_and_triggers">管理你的 AI 命令和触发器</string>
+    <string name="ui_quick_example">快速示例</string>
+    <string name="ui_type_what_is_the_weather_ai_will_respond">输入：“天气怎么样？$” • AI 将会回复</string>
+    <string name="ui_active_triggers">已启用触发器</string>
+    <string name="ui_no_commands_yet">暂无命令</string>
+
+    <string name="ui_enable_all_commands">启用命令</string>
+    <string name="ui_enable_all_commands_desc">关闭后将临时禁用所有 /命令（AI 触发器仍可用）。</string>
+    <string name="ui_commands_enabled_toast">命令已开启</string>
+    <string name="ui_commands_disabled_toast">命令已关闭</string>
+
+    <string name="ui_enable_all_triggers">启用触发器</string>
+    <string name="ui_enable_all_triggers_desc">关闭后将临时禁用此页面的所有触发器。</string>
+    <string name="ui_triggers_enabled_toast">触发器已开启</string>
+    <string name="ui_triggers_disabled_toast">触发器已关闭</string>
+    <string name="ui_quick_guide">快速指南</string>
+    <string name="ui_type_text_trigger_symbol_at_end">输入文字并在末尾添加触发符号</string>
+    <string name="ui_commands">命令</string>
+    <string name="ui_commands_patterns">命令与触发器</string>
+    <string name="ui_formatting">格式</string>
+    <string name="ui_got_it">知道了</string>
+    <string name="ui_what_is_ai">什么是 AI？$</string>
+    <string name="ui_ask_keep_text">保留原文并追加 AI 回复</string>
+    <string name="ui_note_ask_time_keeps_note">备注。/ask 时间？$ → 保留“备注”。</string>
+    <string name="ui_hello_translate">你好 /translate$</string>
+    <string name="ui_text_text_text_text">文本| 文本@ 文本~ 文本_</string>
+    <string name="ui_add_new_command">添加新命令</string>
+    <string name="ui_create_a_custom_command_to_trigger_ai">创建一个自定义命令来触发 AI</string>
+    <string name="ui_command_name">命令名称</string>
+    <string name="ui_system_message_optional">系统提示（可选）</string>
+    <string name="ui_edit_command">编辑命令</string>
+    <string name="ui_edit_inline_ask_command">编辑内联提问命令</string>
+    <string name="ui_edit_trigger_symbol">编辑触发符号</string>
+    <string name="ui_change_the_symbol_that_triggers_this_action">修改触发此动作的符号</string>
+    <string name="ui_trigger_symbol">触发符号</string>
+    <string name="ui_preview">预览</string>
+    <string name="ui_turn_on_to_activate_this_trigger">开启后此触发器生效</string>
+    <string name="ui_example_prefix">例如：%1$s</string>
+    <string name="ui_cmd_desc_tr">翻译下面的文本，只输出译文。</string>
+    <string name="ui_cmd_desc_fix">修正下面文本的拼写和语法错误，只输出修正后的文本。</string>
+    <string name="ui_cmd_desc_short">用一到两句话总结下面的文本。</string>
+    <string name="ui_cmd_desc_formal">以正式、专业的风格改写下面的文本，只输出改写后的文本。</string>
+    <string name="ui_cmd_desc_casual">以友好、随意的风格改写下面的文本，只输出改写后的文本。</string>
+    <string name="ui_cmd_desc_reply">为下面的消息写一条简短且合适的回复，只输出回复内容。</string>
+    <string name="ui_cmd_desc_email">根据下面的主题撰写一封专业邮件。</string>
+    <string name="ui_cmd_desc_explain">用简单易懂的方式解释下面的主题。</string>
+    <string name="ui_cmd_desc_code">按照要求编写代码，不要额外解释，只输出代码。</string>
+    <string name="ui_cmd_desc_emoji">为下面的文本添加合适的表情符号，只输出带表情的文本。</string>
+    <string name="msg_delete_command_confirm">确定要删除“/%1$s”吗？</string>
+    <string name="msg_trigger_symbol_updated">“%1$s”的触发符号已更新为“%2$s”</string>
+    <string name="msg_trigger_reset">“%1$s”已重置为默认值</string>
+    <string name="ui_usage_text_command_ai_trigger_symbol_ne_g__4b58d905">用法：文字 /命令 + AI 触发符号
+例如：你好世界 /short$</string>
+
+    <!-- Floating ball (Lab) -->
+    <string name="ui_floating_ball">悬浮球入口</string>
+    <string name="ui_floating_ball_card_desc">一键呼出 AI 对话框 / 复制输入框内容</string>
+    <string name="ui_floating_ball_desc">启用 1 个或 2 个悬浮球。点击 AI 悬浮球直接打开 AI 对话框；点击复制悬浮球复制“整个输入框”。</string>
+    <string name="ui_floating_pad_desc">启用 1 个固定的长方形悬浮按钮。你可以调整它的 X / Y 位置和按钮尺寸。手势：点击=AI 对话框；长按=复制整个输入框；上下左右滑动=快捷动作。</string>
+    <string name="ui_floating_ball_perm_desc">需要悬浮窗权限（显示在其它应用上方）。</string>
+    <string name="ui_overlay_permission_granted">悬浮窗权限：已授权</string>
+    <string name="ui_overlay_permission_missing">悬浮窗权限：未授权</string>
+    <string name="ui_grant">去授权</string>
+    <string name="ui_manage">管理</string>
+
+    <string name="ui_enable_floating_pad">启用悬浮按钮</string>
+    <string name="ui_floating_pad_gestures">点击：AI 对话框 · 长按：复制输入框 · 上滑：唤起菜单 · 下滑：悬浮设置 · 左滑：命令 · 右滑：触发器</string>
+    <string name="ui_pos_x">X 位置</string>
+    <string name="ui_pos_y">Y 位置</string>
+    <string name="ui_pos_fmt">位置：X=%1$d / Y=%2$d</string>
+    <string name="ui_size_w">宽度（dp）</string>
+    <string name="ui_size_h">高度（dp）</string>
+    <string name="ui_size_fmt">尺寸：%1$ddp × %2$ddp</string>
+    <string name="ui_ai_ball">AI 悬浮球</string>
+    <string name="ui_ai_ball_desc">点击打开 AI 对话框（会把“提示词 + 触发符号”写入当前输入框）。</string>
+    <string name="ui_copy_ball">复制悬浮球</string>
+    <string name="ui_copy_ball_desc">点击复制当前“整个输入框”的内容。</string>
+    <string name="ui_snap_to_edge">自动吸边</string>
+    <string name="ui_long_press_hide">长按隐藏</string>
+    <string name="ui_floating_ball_style">样式</string>
+    <string name="ui_circle">圆形</string>
+    <string name="ui_round">圆角</string>
+    <string name="ui_ball_size_fmt">悬浮球大小：%1$ddp</string>
+    <string name="ui_ball_alpha_fmt">悬浮球不透明度：%1$d%%</string>
+    <string name="ui_reset_position">重置位置</string>
+    <string name="ui_ai_chat">AI 对话框</string>
+    <string name="ui_enter_prompt">请输入提示词</string>
+    <string name="ui_send">发送</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_role_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_input_field"
+        android:backgroundTint="?attr/colorSurfaceContainerHigh"
+        android:hint="@string/role_name_hint"
+        android:paddingHorizontal="16dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_role_trigger"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_input_field"
+        android:backgroundTint="?attr/colorSurfaceContainerHigh"
+        android:hint="@string/role_trigger_hint"
+        android:maxLength="10"
+        android:paddingHorizontal="16dp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_role_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_input_field"
+        android:backgroundTint="?attr/colorSurfaceContainerHigh"
+        android:hint="@string/role_prompt_hint"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        android:textSize="14sp" />
+
+</LinearLayout>

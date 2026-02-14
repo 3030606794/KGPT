@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/bg_bottom_sheet_floating"
+    android:clipToOutline="true"
+    android:outlineProvider="background"
+    android:elevation="8dp" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roles_title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_roles"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="12dp"
+        android:nestedScrollingEnabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_role"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/add_role"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_close_roles"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/close"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+
+</LinearLayout>

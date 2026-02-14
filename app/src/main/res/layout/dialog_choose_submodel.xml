@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp"
+    android:background="@drawable/bg_bottom_sheet_floating"
+    android:clipToOutline="true">
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/header_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_back"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_arrow_left"
+                app:iconTint="?attr/colorOnSurface"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/iv_title_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_ai_invocation_filled"
+                app:tint="?attr/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/ui_model_role_key"
+                android:textSize="20sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_action"
+    style="@style/Widget.Material3.Button.TextButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="36dp"
+    android:insetTop="0dp"
+    android:insetBottom="0dp"
+    android:text=""
+    android:visibility="gone"
+    app:icon="@drawable/ic_add"
+    app:iconTint="?attr/colorPrimary"
+    android:textColor="?attr/colorPrimary"
+    android:paddingHorizontal="8dp"
+    android:layout_marginEnd="8dp"/>
+<com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_locate"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ui_locate"
+                app:icon="@drawable/ic_locate"
+                app:iconTint="?attr/colorPrimary"
+                android:layout_marginEnd="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="36dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/ui_save_update"
+                app:icon="@drawable/ic_check"
+                app:iconTint="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimary"
+                android:paddingHorizontal="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fixed_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:id="@+id/sv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/models_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</LinearLayout>
